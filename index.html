@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<!-- 마운틴뷰 8박 베이 에어리어 가족여행 가이드 v2 — 성인 4인 · 쇼핑/카페/테크 중심 (2026.9.10~9.18) -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#faf9f7">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="베이 여행">
+<meta name="format-detection" content="telephone=no">
+<title>베이 에어리어 가족여행 가이드 · 2026.9.10–9.18</title>
+<style>
+  :root{
+    --bg:#faf9f7; --card:#fff; --ink:#17150f; --ink2:#55504a; --ink3:#8d867e;
+    --line:#e8e3db; --accent:#c2410c; --accent2:#0d7490; --gold:#a16207;
+    --warn:#b91c1c; --shadow:0 1px 2px rgba(23,21,15,.05),0 10px 30px rgba(23,21,15,.06);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+    line-height:1.72;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px 90px}
+
+  /* hero */
+  header.hero{padding:52px 0 26px;border-bottom:1px solid var(--line)}
+  .kicker{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:800}
+  h1{font-size:clamp(28px,4.5vw,44px);line-height:1.24;margin:12px 0 14px;letter-spacing:-.025em}
+  .sub{color:var(--ink2);font-size:15.5px;max-width:64ch}
+  .meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
+  .meta span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-size:12.8px;color:var(--ink2)}
+  .heroimg{display:grid;grid-template-columns:2fr 1fr 1fr;gap:6px;margin-top:24px;border-radius:16px;overflow:hidden;height:230px}
+  .heroimg img{width:100%;height:100%;object-fit:cover;display:block;background:#eceae5}
+
+  nav.toc{position:sticky;top:0;z-index:30;background:rgba(250,249,247,.94);
+    backdrop-filter:blur(12px);border-bottom:1px solid var(--line);margin:0 -20px 34px;padding:9px 20px}
+  nav.toc ul{list-style:none;display:flex;gap:2px;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
+  nav.toc ul::-webkit-scrollbar{display:none}
+  nav.toc a{white-space:nowrap;text-decoration:none;color:var(--ink2);font-size:13px;font-weight:650;padding:7px 11px;border-radius:8px}
+  nav.toc a:hover{background:#f0ece5;color:var(--ink)}
+
+  section{margin:0 0 56px;scroll-margin-top:62px}
+  h2{font-size:23px;letter-spacing:-.02em;margin:0 0 6px;display:flex;align-items:center;gap:10px}
+  h2 .n{font-size:11.5px;font-weight:800;color:#fff;background:var(--ink);width:24px;height:24px;border-radius:7px;display:grid;place-items:center;flex:none}
+  .lead{color:var(--ink2);font-size:14.5px;margin:0 0 20px;max-width:70ch}
+  h3{font-size:16.5px;margin:30px 0 12px;letter-spacing:-.015em}
+
+  /* cards */
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+  .grid.wide{grid-template-columns:repeat(auto-fill,minmax(360px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+  .card .ph{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:linear-gradient(135deg,#efece6,#e3ded5)}
+  .card .bd{padding:15px 17px 17px;flex:1}
+  .card h4{margin:0 0 3px;font-size:15.5px;letter-spacing:-.015em}
+  .card h4 a{color:inherit;text-decoration:none;border-bottom:1.5px solid #ded8ce}
+  .card h4 a:hover{border-color:var(--accent);color:var(--accent)}
+  .card .en{font-size:11.8px;color:var(--ink3);margin:0 0 9px}
+  .card p{margin:0 0 9px;font-size:13.7px;color:var(--ink2)}
+  .card dl{margin:0;font-size:12.7px;color:var(--ink2);display:grid;grid-template-columns:auto 1fr;gap:3px 10px}
+  .card dt{color:var(--ink3);white-space:nowrap}
+  .card dd{margin:0}
+  .phfallback{display:grid;place-items:center;text-align:center;padding:10px;
+    background:linear-gradient(135deg,#efece6,#e0dbd1);color:#9a938a;font-size:12px;font-weight:600;letter-spacing:.02em}
+  .heroimg .phfallback{height:100%}
+  .card .phfallback{width:100%;aspect-ratio:16/9}
+  .card.feature .phfallback{aspect-ratio:21/7}
+  .card.feature{grid-column:1/-1}
+  .card.feature .ph{aspect-ratio:21/7}
+
+  .tags{display:flex;flex-wrap:wrap;gap:5px;margin:0 0 9px}
+  .t{font-size:10.8px;font-weight:800;padding:3px 8px;border-radius:6px}
+  .t.car{background:#fef3c7;color:#92400e}
+  .t.transit{background:#dbeafe;color:#1e40af}
+  .t.walk{background:#dcfce7;color:#166534}
+  .t.free{background:#ede9fe;color:#5b21b6}
+  .t.book{background:#fee2e2;color:#991b1b}
+  .t.shop{background:#fce7f3;color:#9d174f}
+  .t.cafe{background:#ffedd5;color:#9a3412}
+  .t.tech{background:#e0f2fe;color:#075985}
+  .t.pick{background:#17150f;color:#fff}
+
+  /* days */
+  .day{background:var(--card);border:1px solid var(--line);border-radius:15px;margin-bottom:11px;box-shadow:var(--shadow);overflow:hidden}
+  .day>summary{list-style:none;cursor:pointer;padding:14px 18px;display:flex;align-items:center;gap:14px}
+  .day>summary::-webkit-details-marker{display:none}
+  .day summary:hover{background:#fcfbf9}
+  .dnum{flex:none;width:50px;text-align:center}
+  .dnum b{display:block;font-size:17.5px;letter-spacing:-.03em}
+  .dnum i{font-style:normal;font-size:11.5px;color:var(--ink3)}
+  .dtitle{flex:1;min-width:0}
+  .dtitle b{display:block;font-size:15.3px;letter-spacing:-.015em}
+  .dtitle span{font-size:12.6px;color:var(--ink3)}
+  .chev{flex:none;color:var(--ink3);font-size:11px;transition:transform .15s}
+  .day[open] .chev{transform:rotate(90deg)}
+  .dbody{padding:4px 18px 18px;border-top:1px solid var(--line)}
+  .tl{list-style:none;margin:12px 0 0;padding:0}
+  .tl li{display:grid;grid-template-columns:70px 1fr;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line)}
+  .tl li:last-child{border-bottom:0}
+  .tl time{font-size:12.3px;color:var(--accent);font-weight:800;padding-top:2px}
+  .tl b{font-size:14px;font-weight:650}
+  .tl p{margin:3px 0 0;font-size:13px;color:var(--ink2)}
+
+  .note{border-left:3px solid var(--accent2);background:#ecfeff;padding:11px 14px;border-radius:0 10px 10px 0;font-size:13.1px;color:#155e75;margin:12px 0}
+  .alert{border-left:3px solid var(--warn);background:#fef2f2;padding:11px 14px;border-radius:0 10px 10px 0;font-size:13.1px;color:#7f1d1d;margin:12px 0}
+  .tip{border-left:3px solid var(--gold);background:#fefce8;padding:11px 14px;border-radius:0 10px 10px 0;font-size:13.1px;color:#713f12;margin:12px 0}
+
+  table{width:100%;border-collapse:collapse;font-size:13.2px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+  th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#faf8f4;font-size:11.5px;color:var(--ink3);font-weight:800;letter-spacing:.03em;text-transform:uppercase}
+  tr:last-child td{border-bottom:0}
+  .tbl-scroll{overflow-x:auto}
+  .dead{color:var(--warn);font-weight:700}
+
+  ul.chk{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+  ul.chk li{background:#fff;border:1px solid var(--line);border-radius:10px;padding:11px 14px;font-size:13.5px;display:flex;gap:11px;align-items:flex-start}
+  ul.chk li::before{content:"☐";font-size:15px;color:var(--accent);flex:none;line-height:1.5}
+  ul.chk li.urgent{border-color:#fca5a5;background:#fff6f6}
+  ul.chk li.urgent::before{content:"⚠";color:var(--warn)}
+
+  a{color:var(--accent2)}
+  footer{border-top:1px solid var(--line);margin-top:56px;padding-top:22px;font-size:12.3px;color:var(--ink3)}
+  footer a{color:var(--ink3)}
+  /* 큰글씨 모드 */
+  body.big{font-size:17.5px}
+  body.big .sub,body.big .lead,body.big .card p,body.big .tl p,body.big .note,
+  body.big .alert,body.big .tip,body.big table,body.big ul.chk li{font-size:15.6px}
+  body.big .card dl,body.big .card .en{font-size:14.2px}
+  body.big .tl b,body.big .card h4{font-size:16.5px}
+
+  /* 하단 플로팅 버튼 */
+  #fab{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom));z-index:50;
+    display:flex;flex-direction:column;gap:8px}
+  #fab button{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:#fff;
+    color:var(--ink2);font:inherit;font-size:15px;font-weight:800;cursor:pointer;
+    box-shadow:0 3px 14px rgba(23,21,15,.16);display:grid;place-items:center;padding:0}
+  #fab button:active{transform:scale(.94)}
+  #fab button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  #totop{opacity:0;pointer-events:none;transition:opacity .2s}
+  #totop.show{opacity:1;pointer-events:auto}
+
+  @media (max-width:700px){
+    body{font-size:15.6px}
+    .wrap{padding:0 16px 110px}
+    nav.toc{margin:0 -16px 28px;padding:8px 16px}
+    nav.toc a{font-size:14px;padding:9px 12px}
+    .mlink{font-size:12px;padding:6px 11px;margin-left:6px}
+    .card .bd{padding:16px 16px 18px}
+    .day>summary{padding:16px 16px}
+    #mapbox{height:430px}
+    .ctl button{font-size:13px;padding:8px 13px}
+    .heroimg{grid-template-columns:1.4fr 1fr;height:160px}
+    .heroimg > *:nth-child(3){display:none}
+    .tl li{grid-template-columns:60px 1fr;gap:9px}
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+  #mapbox{height:560px;border-radius:15px;border:1px solid var(--line);box-shadow:var(--shadow);
+    background:#eceae5;overflow:hidden;z-index:1}
+  #mapbox .leaflet-popup-content{margin:12px 14px;font-size:13.3px;line-height:1.6}
+  #mapbox .leaflet-popup-content b{font-size:14.5px;letter-spacing:-.01em}
+  .mkr{border-radius:50%;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35)}
+  .ctl{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+  .ctl button{font:inherit;font-size:12.4px;font-weight:700;padding:6px 12px;border-radius:999px;
+    border:1px solid var(--line);background:#fff;color:var(--ink2);cursor:pointer;line-height:1.4}
+  .ctl button:hover{background:#f4f1eb}
+  .ctl button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .ctl .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+  .ctl.regions button.on{background:var(--accent);border-color:var(--accent)}
+  .mlink{display:inline-block;font-size:10.5px;font-weight:800;padding:2px 7px;border-radius:5px;
+    margin-left:5px;text-decoration:none;vertical-align:2px;white-space:nowrap;
+    background:#eef2f6;color:#475569;border:1px solid #e2e8f0}
+  .mlink:hover{background:var(--accent2);color:#fff;border-color:var(--accent2)}
+  .mlink.jump{background:#fdf2f8;color:#9d174f;border-color:#fbcfe8}
+  .mlink.jump:hover{background:#db2777;color:#fff;border-color:#db2777}
+  #mapfail{display:none;padding:40px 20px;text-align:center;color:var(--ink3);font-size:13.5px}
+</style>
+<style>
+@media (max-width:700px){
+  .mlink{font-size:12.2px !important;padding:6px 11px !important;margin-left:6px !important}
+  #mapbox{height:430px !important}
+  .ctl button{font-size:13px !important;padding:9px 14px !important}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">Bay Area · Sept 2026</div>
+  <h1>마운틴뷰 8박 &amp; 샌프란시스코<br>실리콘밸리 쇼핑 · 카페 · 테크 가이드</h1>
+  <p class="sub">성인 4인(20~30대 형제 + 부모님) 기준으로 다시 짰습니다. <b>하루 3~4곳만</b> 넣어서 여유롭게 다니고, 자연은 진짜 유명한 곳만 골라 나머지는 지나가면서 보는 구성입니다. 쇼핑·거리·카페 비중을 크게 늘렸습니다.</p>
+  <div class="meta">
+    <span>📅 9/10(목) – 9/18(금) · 8박</span>
+    <span>🏠 359 Oak St, Mountain View</span>
+    <span>🚗 SF는 자차 이동</span>
+    <span>🚈 팔로알토 · 산호세는 대중교통 가능</span>
+    <span>💼 구글 본사 방문 (형 인턴)</span>
+  </div>
+  <p class="iostip" style="display:none;margin:16px 0 0;font-size:13px;color:var(--ink2);
+     background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 13px">
+    📱 <b>홈 화면에 추가해두면 앱처럼 쓸 수 있습니다.</b><br>
+    아이폰 — 사파리 아래쪽 <b>공유 버튼(↑)</b> → <b>홈 화면에 추가</b>.
+    글씨가 작으면 오른쪽 아래 <b>가</b> 버튼을 누르세요.
+  </p>
+  <div class="heroimg">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Gate_Bridge_and_San_Francisco_skyline_from_Hawk_Hill_at_Blue_Hour_dllu.jpg?width=1100" alt="금문교와 샌프란시스코 스카이라인" loading="lazy">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/300_Santana_Row,_San_Jose,_in_winter.JPG?width=600" alt="산타나로" loading="lazy">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aerial_view_of_Apple_Park_dllu.jpg?width=600" alt="애플파크" loading="lazy">
+  </div>
+</header>
+
+<nav class="toc">
+  <ul>
+    <li><a href="#map">📍 지도</a></li>
+    <li><a href="#quick">한눈에</a></li>
+    <li><a href="#itin">날짜별 일정</a></li>
+    <li><a href="#shop">쇼핑 ★</a></li>
+    <li><a href="#goods">소품샵·디자인</a></li>
+    <li><a href="#cafe">카페·베이커리</a></li>
+    <li><a href="#google">구글 본사</a></li>
+    <li><a href="#tech">테크 &amp; Waymo</a></li>
+    <li><a href="#sf">SF 명소</a></li>
+    <li><a href="#nature">자연 (엄선)</a></li>
+    <li><a href="#drive">SF 운전·주차</a></li>
+    <li><a href="#transit">대중교통</a></li>
+    <li><a href="#eat">맛집·마트</a></li>
+    <li><a href="#check">체크리스트</a></li>
+  </ul>
+</nav>
+
+
+<section id="map">
+  <h2><span class="n">📍</span>전체 지도</h2>
+  <p class="lead">가이드에 나온 <b>94곳</b>을 카테고리별로 찍은 지도입니다. 아래 버튼으로 지역·종류를 걸러서 보고, 핀을 누르면 설명과 길찾기 링크가 나옵니다. <b>일정과 각 장소 카드의 "지도" 칩을 누르면 해당 핀으로 바로 이동</b>합니다.</p>
+  <div class="ctl" id="catctl"><button class="on" data-cat="stay"><span class="dot" style="background:#111111"></span>숙소</button><button class="on" data-cat="shop"><span class="dot" style="background:#db2777"></span>쇼핑</button><button class="on" data-cat="cafe"><span class="dot" style="background:#ea580c"></span>카페·베이커리</button><button class="on" data-cat="tech"><span class="dot" style="background:#0284c7"></span>테크</button><button class="on" data-cat="sight"><span class="dot" style="background:#7c3aed"></span>명소</button><button class="on" data-cat="nature"><span class="dot" style="background:#16a34a"></span>자연</button><button class="on" data-cat="food"><span class="dot" style="background:#b45309"></span>맛집·마트</button><button class="on" data-cat="transit"><span class="dot" style="background:#64748b"></span>교통·주차</button></div>
+  <div class="ctl regions" id="regctl"><button data-region="all" class=on>전체</button><button data-region="mv">마운틴뷰·실리콘밸리</button><button data-region="pa">팔로알토·스탠퍼드</button><button data-region="sj">쿠퍼티노·산호세</button><button data-region="sf">샌프란시스코</button><button data-region="out">근교·해안</button></div>
+  <div id="mapbox"><div id="mapfail">지도를 불러오지 못했습니다. 인터넷 연결을 확인하시거나, 아래 KML 파일을 구글 내 지도로 가져가서 보세요.</div></div>
+  <div class="note" style="margin-top:14px">
+    <b>이 지도는 파일 안에 들어 있습니다.</b> 따로 뭘 설치하거나 가져올 필요 없이, 이 HTML 파일만 열면 바로 작동합니다.
+    휴대폰 브라우저에서 열어도 그대로 되니까 <b>여행 중에는 이 파일을 즐겨찾기 해두고 쓰시면 됩니다.</b>
+    핀을 누르면 나오는 <b>"구글맵에서 열기"</b>를 누르면 휴대폰 구글맵 앱으로 넘어가서 바로 길찾기가 됩니다.
+  </div>
+  <details style="margin-top:10px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 15px">
+    <summary style="cursor:pointer;font-size:13.2px;font-weight:700;color:var(--ink2)">선택 사항 — 휴대폰 구글맵 앱 안에 핀을 저장해두고 싶다면 (안 하셔도 됩니다)</summary>
+    <div style="font-size:13.1px;color:var(--ink2);margin-top:10px">
+      <p style="margin:0 0 8px">비행기 모드나 데이터가 없는 상황에서도 구글맵 앱에서 핀을 보고 싶을 때만 하세요. PC에서 3분이면 됩니다.</p>
+      <ol style="margin:0 0 10px;padding-left:20px">
+        <li>아래 버튼으로 <b>.kml 파일</b>을 내려받습니다.</li>
+        <li>PC 브라우저로 <a href="https://www.google.com/mymaps" target="_blank">google.com/mymaps</a> 접속 → <b>새 지도 만들기</b>.</li>
+        <li>왼쪽 패널의 <b>가져오기</b>를 누르고 받은 .kml 파일을 올립니다.</li>
+        <li>끝입니다. 휴대폰 구글맵 앱 → <b>저장됨 → 지도</b>에서 열립니다.</li>
+      </ol>
+      <a download="베이에어리어-여행지도.kml" href="data:application/vnd.google-earth.kml+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGttbCB4bWxucz0iaHR0cDovL3d3dy5vcGVuZ2lzLm5ldC9rbWwvMi4yIj48RG9jdW1lbnQ+CjxuYW1lPuuyoOydtCDsl5DslrTrpqzslrQg7Jes7ZaJIDIwMjYuOS4xMC05LjE4PC9uYW1lPgo8U3R5bGUgaWQ9InNfc3RheSI+PEljb25TdHlsZT48Y29sb3I+ZmYxMTExMTE8L2NvbG9yPjxzY2FsZT4xLjE8L3NjYWxlPjxJY29uPjxocmVmPmh0dHA6Ly9tYXBzLmdvb2dsZS5jb20vbWFwZmlsZXMva21sL3NoYXBlcy9wbGFjZW1hcmtfY2lyY2xlLnBuZzwvaHJlZj48L0ljb24+PC9JY29uU3R5bGU+PC9TdHlsZT4KPFN0eWxlIGlkPSJzX3Nob3AiPjxJY29uU3R5bGU+PGNvbG9yPmZmNzcyN2RiPC9jb2xvcj48c2NhbGU+MS4xPC9zY2FsZT48SWNvbj48aHJlZj5odHRwOi8vbWFwcy5nb29nbGUuY29tL21hcGZpbGVzL2ttbC9zaGFwZXMvcGxhY2VtYXJrX2NpcmNsZS5wbmc8L2hyZWY+PC9JY29uPjwvSWNvblN0eWxlPjwvU3R5bGU+CjxTdHlsZSBpZD0ic19jYWZlIj48SWNvblN0eWxlPjxjb2xvcj5mZjBjNThlYTwvY29sb3I+PHNjYWxlPjEuMTwvc2NhbGU+PEljb24+PGhyZWY+aHR0cDovL21hcHMuZ29vZ2xlLmNvbS9tYXBmaWxlcy9rbWwvc2hhcGVzL3BsYWNlbWFya19jaXJjbGUucG5nPC9ocmVmPjwvSWNvbj48L0ljb25TdHlsZT48L1N0eWxlPgo8U3R5bGUgaWQ9InNfdGVjaCI+PEljb25TdHlsZT48Y29sb3I+ZmZjNzg0MDI8L2NvbG9yPjxzY2FsZT4xLjE8L3NjYWxlPjxJY29uPjxocmVmPmh0dHA6Ly9tYXBzLmdvb2dsZS5jb20vbWFwZmlsZXMva21sL3NoYXBlcy9wbGFjZW1hcmtfY2lyY2xlLnBuZzwvaHJlZj48L0ljb24+PC9JY29uU3R5bGU+PC9TdHlsZT4KPFN0eWxlIGlkPSJzX3NpZ2h0Ij48SWNvblN0eWxlPjxjb2xvcj5mZmVkM2E3YzwvY29sb3I+PHNjYWxlPjEuMTwvc2NhbGU+PEljb24+PGhyZWY+aHR0cDovL21hcHMuZ29vZ2xlLmNvbS9tYXBmaWxlcy9rbWwvc2hhcGVzL3BsYWNlbWFya19jaXJjbGUucG5nPC9ocmVmPjwvSWNvbj48L0ljb25TdHlsZT48L1N0eWxlPgo8U3R5bGUgaWQ9InNfbmF0dXJlIj48SWNvblN0eWxlPjxjb2xvcj5mZjRhYTMxNjwvY29sb3I+PHNjYWxlPjEuMTwvc2NhbGU+PEljb24+PGhyZWY+aHR0cDovL21hcHMuZ29vZ2xlLmNvbS9tYXBmaWxlcy9rbWwvc2hhcGVzL3BsYWNlbWFya19jaXJjbGUucG5nPC9ocmVmPjwvSWNvbj48L0ljb25TdHlsZT48L1N0eWxlPgo8U3R5bGUgaWQ9InNfZm9vZCI+PEljb25TdHlsZT48Y29sb3I+ZmYwOTUzYjQ8L2NvbG9yPjxzY2FsZT4xLjE8L3NjYWxlPjxJY29uPjxocmVmPmh0dHA6Ly9tYXBzLmdvb2dsZS5jb20vbWFwZmlsZXMva21sL3NoYXBlcy9wbGFjZW1hcmtfY2lyY2xlLnBuZzwvaHJlZj48L0ljb24+PC9JY29uU3R5bGU+PC9TdHlsZT4KPFN0eWxlIGlkPSJzX3RyYW5zaXQiPjxJY29uU3R5bGU+PGNvbG9yPmZmOGI3NDY0PC9jb2xvcj48c2NhbGU+MS4xPC9zY2FsZT48SWNvbj48aHJlZj5odHRwOi8vbWFwcy5nb29nbGUuY29tL21hcGZpbGVzL2ttbC9zaGFwZXMvcGxhY2VtYXJrX2NpcmNsZS5wbmc8L2hyZWY+PC9JY29uPjwvSWNvblN0eWxlPjwvU3R5bGU+CjxGb2xkZXI+PG5hbWU+7IiZ7IaMPC9uYW1lPgo8UGxhY2VtYXJrPjxuYW1lPuyImeyGjCAoMzU5IE9hayBTdCk8L25hbWU+PGRlc2NyaXB0aW9uPuuniOyatO2LtOu3sCDri6TsmrTtg4DsmrQg64+E67O06raMPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3Nfc3RheTwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjA4MzQsMzcuMzkwMywwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8L0ZvbGRlcj4KPEZvbGRlcj48bmFtZT7sh7ztlZE8L25hbWU+CjxQbGFjZW1hcms+PG5hbWU+Q2FzdHJvIFN0cmVldDwvbmFtZT48ZGVzY3JpcHRpb24+7IiZ7IaMIOuPhOuztCAxNX4yMOu2hC4g7Iud64u5wrfrsJQg7KSR7Ius7J2YIOyggOuFgSDqsbDrpqw8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19zaG9wPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuMDgsMzcuMzkzNiwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPlN0YW5mb3JkIFNob3BwaW5nIENlbnRlcjwvbmFtZT48ZGVzY3JpcHRpb24+MjAyNuuFhCDsi6Dqt5wg67iM656c65OcIDE36rOzLiDso7zssKgg66y066OMPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3Nfc2hvcDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjE3MiwzNy40NDMsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5Vbml2ZXJzaXR5IEF2ZW51ZTwvbmFtZT48ZGVzY3JpcHRpb24+7YyU66Gc7JWM7YagIOuLpOyatO2DgOyatCDsg4HsoJDqsIA8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19zaG9wPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuMTYxLDM3LjQ0NSwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPkRhaXNvIOy/oO2NvO2LsOuFuDwvbmFtZT48ZGVzY3JpcHRpb24+7IaM7ZKIIOyHvO2VkSDsm4zrsI3sl4U8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19zaG9wPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuMDE0LDM3LjMyMywwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPlNhbnRhbmEgUm93IOKYhTwvbmFtZT48ZGVzY3JpcHRpb24+7J2067KIIOyXrO2WiSDsh7ztlZEg67O47KeELiDtlbTsp4jrhZjrtoDthLDqsIAg7KeE7KecPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3Nfc2hvcDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIxLjk0OCwzNy4zMjEsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5XZXN0ZmllbGQgVmFsbGV5IEZhaXI8L25hbWU+PGRlc2NyaXB0aW9uPuyCsO2DgOuCmOuhnCDquLgg6rG064SILiDrsqDsnbQg7LWc64yAIOyLpOuCtOuqsDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3Nob3A8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMS45NDYsMzcuMzI1LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+RG93bnRvd24gTG9zIEdhdG9zPC9uYW1lPjxkZXNjcmlwdGlvbj7sgrDquLDsiq0g67aA7LSM7J2YIOyYiOyBnCDri6TsmrTtg4DsmrQ8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19zaG9wPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjEuOTgyLDM3LjIyNywwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPlNGIFByZW1pdW0gT3V0bGV0czwvbmFtZT48ZGVzY3JpcHRpb24+7JWE7Jq466CbIO2VmOuCmOunjCDqsITri6TrqbQg7Jes6riwPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3Nfc2hvcDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIxLjczNSwzNy43MDMsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5GZXJyeSBCdWlsZGluZzwvbmFtZT48ZGVzY3JpcHRpb24+SGVhdGggQ2VyYW1pY3MuIO2GoCA44oCTMTTsi5wg7YyM66i47Iqk66eI7LyTPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3Nfc2hvcDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjM5MzcsMzcuNzk1NSwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPlVuaW9uIFNxdWFyZTwvbmFtZT48ZGVzY3JpcHRpb24+66qw7J2AIO2PkOyXhS4g7Yq57KCVIOunpOyepeunjDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3Nob3A8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi40MDc1LDM3Ljc4OCwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPuuLjO2FkOuPhCBTRiDtlIzrnpjqt7jsi608L25hbWU+PGRlc2NyaXB0aW9uPu2VnOyglSDqtb/spojCt+yytO2XmOyhtDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3Nob3A8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi40MDg1LDM3Ljc4NzMsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5IYXllcyBWYWxsZXkg4piFPC9uYW1lPjxkZXNjcmlwdGlvbj5TRiDrtoDti7Dtgawg7Ie87ZWRIDHsiJzsnIQuIOuwmOuCmOygiCDsvZTsiqQ8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19zaG9wPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuNDI0LDM3Ljc3NjUsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5KYXBhbnRvd24gKEphcGFuIENlbnRlcik8L25hbWU+PGRlc2NyaXB0aW9uPuq4sOuFuOy/oOuLiOyVvCDCtyDrp4jsnbTrj4Qgwrcg64uk7J207IaMPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3Nfc2hvcDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjQzLDM3Ljc4NSwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPlJhcmUgRGV2aWNlPC9uYW1lPjxkZXNjcmlwdGlvbj7tgZDroIjsnbTshZgg7KKL7J2AIOuUlOyekOyduMK36riw7ZSE7Yq47IiNPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3Nfc2hvcDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjQzOCwzNy43NzU3LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+VmFsZW5jaWEgU3RyZWV0IChNaXNzaW9uKTwvbmFtZT48ZGVzY3JpcHRpb24+UGF4dG9uIEdhdGUgwrcgRGFuZGVsaW9uIENob2NvbGF0ZTwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3Nob3A8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi40MjE1LDM3Ljc2LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+QW1vZWJhIE11c2ljPC9uYW1lPjxkZXNjcmlwdGlvbj7shLjqs4Qg7LWc64yA6riJIOugiOy9lOuTnOyIjTwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3Nob3A8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi40NTAzLDM3Ljc2OTIsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5IYWlnaHQtQXNoYnVyeTwvbmFtZT48ZGVzY3JpcHRpb24+67mI7Yuw7KeAIOyYt+qwgOqyjCDqsbDrpqw8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19zaG9wPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuNDQ2OSwzNy43Njk5LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+UGFwZXIgU291cmNlIChGaWxsbW9yZSk8L25hbWU+PGRlc2NyaXB0aW9uPlNG7JeQ7IScIOyXrOq4sCDsp4DsoJDrp4wg64Ko7JWY7Iq164uI64ukPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3Nfc2hvcDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjQzNCwzNy43ODgsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5XaWxsaWFtIFN0b3V0IEJvb2tzPC9uYW1lPjxkZXNjcmlwdGlvbj7qsbTstpXCt+uUlOyekOyduCDsoITrrLgg7ISc7KCQPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3Nfc2hvcDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjQwMzMsMzcuNzk3LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjwvRm9sZGVyPgo8Rm9sZGVyPjxuYW1lPuy5tO2OmMK367Kg7J207Luk66asPC9uYW1lPgo8UGxhY2VtYXJrPjxuYW1lPkNvdXBhIENhZmU8L25hbWU+PGRlc2NyaXB0aW9uPu2MlOuhnOyVjO2GoCDthLDspI/rjIDqsJAg7Lm07Y6YPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3NfY2FmZTwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjE2MTQsMzcuNDQ0MywwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPlZveWFnZXIgQ3JhZnQgQ29mZmVlPC9uYW1lPjxkZXNjcmlwdGlvbj7su6zrn6wg7YOA7J28IOyduO2FjOumrOyWtC4g7IKs7Jqw7Iqk67Kg7J20IOqwkOyEsey5tO2OmCAx7Iic7JyEPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3NfY2FmZTwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIxLjk3NSwzNy4zMjMsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5OaXJ2YW5hIFNvdWw8L25hbWU+PGRlc2NyaXB0aW9uPu2Vke2BrCDsspzsnqUgKyDrs7XsuLUuIOuLpOyatO2DgOyatCDsubTtjpg8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19jYWZlPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjEuODg5LDM3LjMzNCwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPlJpdHVhbCBDb2ZmZWUgKEhheWVzIFZhbGxleSk8L25hbWU+PGRlc2NyaXB0aW9uPuqzteybkCDslZ4uIO2XpOydtOymiOuwuOumrCDsh7ztlZEg7KSR6rCE7JeQPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3NfY2FmZTwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjQyNDMsMzcuNzc2MiwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPkJsdWUgQm90dGxlIOybkOyhsCDtgqTsmKTsiqTtgaw8L25hbWU+PGRlc2NyaXB0aW9uPuu4lOujqOuztO2LgOydtCDsi5zsnpHrkJwg7LC96rOgIOqzqOuqqTwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX2NhZmU8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi40MjI1LDM3Ljc3NTcsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5TaWdodGdsYXNzIENvZmZlZTwvbmFtZT48ZGVzY3JpcHRpb24+7LC96rOg7ZiVIOuhnOyKpO2EsOumrC4g6rO16rCE7J20IOuzvOqxsOumrDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX2NhZmU8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi40MDksMzcuNzc3LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+VGFydGluZSBCYWtlcnk8L25hbWU+PGRlc2NyaXB0aW9uPlNGIOuyoOydtOy7pOumrOydmCDrjIDrqoXsgqwuIOykhCDqsIHsmKQ8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19jYWZlPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuNDI0MSwzNy43NjE0LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+Rm91ciBCYXJyZWwgQ29mZmVlPC9uYW1lPjxkZXNjcmlwdGlvbj7rr7jshZgg7Ie87ZWRIOy9lOyKpCDspJHqsIQ8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19jYWZlPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuNDIyLDM3Ljc2NywwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPldyZWNraW5nIEJhbGwgQ29mZmVlPC9uYW1lPjxkZXNjcmlwdGlvbj5VbmlvbiBTdCDsh7ztlZEg7KSR6rCEPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3NfY2FmZTwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjQzNywzNy43OTc1LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+SmFuZSBvbiBGaWxsbW9yZTwvbmFtZT48ZGVzY3JpcHRpb24+67Kg7J207Luk66asIOy5tO2OmC4g67iM65+w7LmYPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3NfY2FmZTwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjQzMzgsMzcuNzg4LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjwvRm9sZGVyPgo8Rm9sZGVyPjxuYW1lPu2FjO2BrDwvbmFtZT4KPFBsYWNlbWFyaz48bmFtZT7su7Ttk6jthLAg7Jet7IKsIOuwleusvOq0gDwvbmFtZT48ZGVzY3JpcHRpb24+7IiY4oCT7J28IDEw4oCTMTfsi5wuIOydtOuyiCDsl6ztlokg7YWM7YGsIO2VmOydtOudvOydtO2KuDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3RlY2g8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi4wNzc0LDM3LjQxNDMsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5Hb29nbGUgVmlzaXRvciBFeHBlcmllbmNlPC9uYW1lPjxkZXNjcmlwdGlvbj7snbzrsJgg6rCc67CpwrfrrLTro4wuIOq1rOq4gCDsiqTthqDslrTsmYAg7Lm07Y6YPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3NfdGVjaDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjA4MSwzNy40MiwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPkdvb2dsZXBsZXg8L25hbWU+PGRlc2NyaXB0aW9uPu2YlSDrsLDsp4DroZwg6rKM7Iqk7Yq4IOyeheyepS4g7Lqg7Y287IqkwrdCYXkgVmlldzwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3RlY2g8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi4wODQxLDM3LjQyMiwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPkhQIOqwnOufrOyngDwvbmFtZT48ZGVzY3JpcHRpb24+7Iuk66as7L2Y67C466asIOuwnOyDgeyngC4g7Jm46rSA66eMIDXrtoQ8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc190ZWNoPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuMTUzLDM3LjQ0MTksMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5NZXRhIEhRIOyCrOyduDwvbmFtZT48ZGVzY3JpcHRpb24+7JeE7KeA7LKZIOqwhO2MkCDsnbjspp3sg7cuIOy6oO2NvOyKpCDsp4TsnoUg67aI6rCAPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3NfdGVjaDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjE0OCwzNy40ODUsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5BcHBsZSBQYXJrIFZpc2l0b3IgQ2VudGVyPC9uYW1lPjxkZXNjcmlwdGlvbj7rrLTro4wuIOujqO2UhO2DkeyXkOyEnCDsmrDso7zshKAg7IKs7JilIOyhsOunnTwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3RlY2g8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi4wMDU1LDM3LjMzMjcsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5BcHBsZSBQYXJrPC9uYW1lPjxkZXNjcmlwdGlvbj7smrDso7zshKAg7IKs7JilLiDsmbjrtoDsl5DshJzrp4w8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc190ZWNoPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuMDA5LDM3LjMzNDksMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5JbnRlbCBNdXNldW08L25hbWU+PGRlc2NyaXB0aW9uPuyblOKAk+q4iOunjMK366y066OMLiAx7Iuc6rCE7J2066m0IOy2qeu2hDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3RlY2g8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMS45NjMsMzcuMzg4LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+TlZJRElBIOyCrOyYpTwvbmFtZT48ZGVzY3JpcHRpb24+7Jm46rSA66eMLiDsp4DrgpjqsIDripQg6ri47J2066m0PC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3NfdGVjaDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIxLjk2NiwzNy4zNzEsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5UaGUgVGVjaCBJbnRlcmFjdGl2ZTwvbmFtZT48ZGVzY3JpcHRpb24+7ISx7J24ICQzOCwgSU1BWCDtj6ztlag8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc190ZWNoPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjEuODkwNSwzNy4zMzEyLDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+TXVzw6llIE3DqWNhbmlxdWU8L25hbWU+PGRlc2NyaXB0aW9uPuyeheyepSDrrLTro4wuIDEwMOuFhCDrkJwg64+Z7KCEIOyVhOy8gOydtOuTnDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3RlY2g8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi40MTYsMzcuODA5LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+Q2FibGUgQ2FyIE11c2V1bTwvbmFtZT48ZGVzY3JpcHRpb24+66y066OMLiDsi6TsoJwg6rWs64+ZIOq4sOqzhOyLpDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3RlY2g8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi40MTE2LDM3Ljc5NDcsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5FeHBsb3JhdG9yaXVtPC9uYW1lPjxkZXNjcmlwdGlvbj7sm5TCt+2ZlCDtnLTqtIA8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc190ZWNoPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuMzk3MywzNy44MDE3LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+VGhlIEludGVydmFsIGF0IExvbmcgTm93PC9uYW1lPjxkZXNjcmlwdGlvbj4x66eMIOuFhCDsi5zqs4Qg7J6s64uo7J2YIOuwlCDqsrgg7ISc7J6sPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3NfdGVjaDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjQzMSwzNy44MDY1LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjwvRm9sZGVyPgo8Rm9sZGVyPjxuYW1lPuuqheyGjDwvbmFtZT4KPFBsYWNlbWFyaz48bmFtZT7siqTtg6Dtjbzrk5wg66mU7J24IOy/vOuTnDwvbmFtZT48ZGVzY3JpcHRpb24+7IKs7JWUIOyVhOy5mOyZgCDslbzsnpDsiJgg64yA66GcLiDrrLTro4w8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19zaWdodDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjE2OTcsMzcuNDI3NSwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPlN0YW5mb3JkIE1lbW9yaWFsIENodXJjaDwvbmFtZT48ZGVzY3JpcHRpb24+66qo7J6Q7J207YGsIOuyve2ZlOqwgCDslZXqtow8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19zaWdodDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjE3LDM3LjQyNjcsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5DYW50b3IgQXJ0cyBDZW50ZXIgKyDroZzrjJXsoJXsm5A8L25hbWU+PGRlc2NyaXB0aW9uPuyeheyepSDrrLTro4wuIOyblMK37ZmUIO2ctOq0gDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3NpZ2h0PC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuMTcwNSwzNy40MzIyLDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+7ZuE67KE7YOA7JuMPC9uYW1lPjxkZXNjcmlwdGlvbj7soITrp53rjIAgMjAyNi44LjE0fjIwMjcuMS4yNSDtnLTqtIA8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19zaWdodDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjE2NjMsMzcuNDI3NSwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPkNhbGlmb3JuaWEmI3gyNztzIEdyZWF0IEFtZXJpY2E8L25hbWU+PGRlc2NyaXB0aW9uPjnsm5Tsl5Qg7KO866eQ66eMIOyatOyYgTwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3NpZ2h0PC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjEuOTc0LDM3LjM5OCwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPldpbmNoZXN0ZXIgTXlzdGVyeSBIb3VzZTwvbmFtZT48ZGVzY3JpcHRpb24+MTYw6rCcIOuwqeynnOumrCDquLDqtLTtlZwg7KCA7YOdPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3Nfc2lnaHQ8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMS45NTEsMzcuMzE4NCwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPuq4iOusuOq1kDwvbmFtZT48ZGVzY3JpcHRpb24+64Ko7ZaJ66eMIO2Gte2WieujjCAkMTAuNTA8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19zaWdodDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjQ3ODMsMzcuODE5OSwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPkNyaXNzeSBGaWVsZDwvbmFtZT48ZGVzY3JpcHRpb24+7Y+J7KeAwrfsnpTrlJTCt+yjvOywqCDtjrjtlaguIOy1nOqzoOydmCDquIjrrLjqtZAg67ew7Y+s7J247Yq4PC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3Nfc2lnaHQ8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi40NjUsMzcuODA0LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+Rm9ydCBQb2ludDwvbmFtZT48ZGVzY3JpcHRpb24+64uk66asIOuwlOuhnCDslYTrnpguIOybheyepe2VnCDslbXquIA8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19zaWdodDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjQ3NywzNy44MTA1LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+UGFsYWNlIG9mIEZpbmUgQXJ0czwvbmFtZT48ZGVzY3JpcHRpb24+66Gc66eIIOyLoOyghO2SjSDroZztiLDri6QuIDE1fjIw67aEPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3Nfc2lnaHQ8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi40NDg1LDM3LjgwMjksMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT7slYzsubTtirjrnbzspogg7ISsPC9uYW1lPjxkZXNjcmlwdGlvbj7smIjslb0g7ZWE7IiYLiDslbzqsIQg7Yis7Ja0IOy2lOyynDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3NpZ2h0PC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuNDIzLDM3LjgyNywwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPlBpZXIgMzk8L25hbWU+PGRlc2NyaXB0aW9uPuuwlOuLpOyCrOyekCDrrLTrpqwuIOustOujjDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3NpZ2h0PC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuNDA5OCwzNy44MDg3LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+66Gs67CU65OcIOyKpO2KuOumrO2KuDwvbmFtZT48ZGVzY3JpcHRpb24+7Jes642fIOuyiCDqur7snbTripQg6r2D6ri4IOyWuOuNlTwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3NpZ2h0PC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuNDE4NywzNy44MDIxLDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+UGFpbnRlZCBMYWRpZXMgKEFsYW1vIFNxKTwvbmFtZT48ZGVzY3JpcHRpb24+64W47J2EIOustOugteydtCDsoJzsnbwg7JiI7IGoPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3Nfc2lnaHQ8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi40MzI4LDM3Ljc3NjMsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5Ud2luIFBlYWtzPC9uYW1lPjxkZXNjcmlwdGlvbj7si5zrgrQg7KCE6rK9LiDssKjrn4nthLjsnbQg64uk67CcIOq1rOyXrTwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3NpZ2h0PC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuNDQ3NywzNy43NTQ0LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+7LCo7J2064KY7YOA7Jq0IERyYWdvbiBHYXRlPC9uYW1lPjxkZXNjcmlwdGlvbj5HcmFudCBBdmUg65Sw6528IOyYrOudvOqwgOyEuOyalDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3NpZ2h0PC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuNDA1NiwzNy43OTA4LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+Q29pdCBUb3dlcjwvbmFtZT48ZGVzY3JpcHRpb24+64W47Iqk67mE7LmYIOyWuOuNlSDsnIQ8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19zaWdodDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjQwNTgsMzcuODAyNCwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPlNGTU9NQTwvbmFtZT48ZGVzY3JpcHRpb24+7IiYIO2ctOq0gCDCtyA5LzE04oCTMTYg7Yq567OE7Zy06rSAIMK3IOuqqSDslbzqsITqsJzsnqU8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19zaWdodDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjQwMTEsMzcuNzg1NywwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPmRlIFlvdW5nIE11c2V1bTwvbmFtZT48ZGVzY3JpcHRpb24+7JuUIO2ctOq0gC4g7KCE66ed7YOA7JuMIOustOujjDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3NpZ2h0PC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuNDY4NiwzNy43NzE1LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+Q2FsaWZvcm5pYSBBY2FkZW15IG9mIFNjaWVuY2VzPC9uYW1lPjxkZXNjcmlwdGlvbj7siJjsobHqtIAr7ZSM652864Sk7YOA66WoK+yXtOuMgOyasOumvOuPlDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3NpZ2h0PC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuNDY2MSwzNy43Njk5LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+U2FudGEgQ3J1eiBCZWFjaCBCb2FyZHdhbGs8L25hbWU+PGRlc2NyaXB0aW9uPjnsm5Qg7Y+J7J287JeUIOuGgOydtOq4sOq1rCDtnLTsnqUg66eO7J2MPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3Nfc2lnaHQ8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi4wMTgsMzYuOTY0LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+TW9udGVyZXkgQmF5IEFxdWFyaXVtPC9uYW1lPjxkZXNjcmlwdGlvbj7shLHsnbggJDY1LiBMQSDqsIDripQg6ri4IOqyveycoDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3NpZ2h0PC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjEuOTAxOCwzNi42MTgyLDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+Q2FybWVsLWJ5LXRoZS1TZWE8L25hbWU+PGRlc2NyaXB0aW9uPuuPme2ZlCDqsJnsnYAg7JiI7Iig6rCAIOuniOydhDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3NpZ2h0PC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjEuOTIzMywzNi41NTUyLDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjwvRm9sZGVyPgo8Rm9sZGVyPjxuYW1lPuyekOyXsDwvbmFtZT4KPFBsYWNlbWFyaz48bmFtZT5TaG9yZWxpbmUgUGFyazwvbmFtZT48ZGVzY3JpcHRpb24+64W47J2EIOuqheyGjC4g67CV66y86rSA7JeQ7IScIOywqCAz67aEPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3NfbmF0dXJlPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuMDgsMzcuNDMsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5KYXBhbmVzZSBUZWEgR2FyZGVuPC9uYW1lPjxkZXNjcmlwdGlvbj7qs6jrk6DqsozsnbTtirjtjIztgawg7JWILiA57IucIOqwnOyepTwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX25hdHVyZTwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjQ3MDMsMzcuNzcwMiwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPk11aXIgV29vZHM8L25hbWU+PGRlc2NyaXB0aW9uPuyYiOyVvSDtlYTsiJguIOugiOuTnOyasOuTnCDsiLI8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19uYXR1cmU8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi41NzE5LDM3Ljg5MTIsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5TYXVzYWxpdG88L25hbWU+PGRlc2NyaXB0aW9uPuuupOyWtOyasOymiCDri6TrhYDsmKTripQg6ri4IOygkOyLrDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX25hdHVyZTwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjQ4NSwzNy44NTksMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5IYWxmIE1vb24gQmF5PC9uYW1lPjxkZXNjcmlwdGlvbj7siJnshowgNDXrtoQuIOygiOuyvSDsgrDssYUgKyDrno3siqTthLDroaQ8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19uYXR1cmU8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi40Mjg2LDM3LjQ2MzYsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5QZXNjYWRlcm88L25hbWU+PGRlc2NyaXB0aW9uPjHrsogg6rWt64+EIOuCqOyqvS4g7JWE7Yuw7LSI7YGsIOyImO2UhDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX25hdHVyZTwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjM4MywzNy4yNTUsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5QaWdlb24gUG9pbnQg65Ox64yAPC9uYW1lPjxkZXNjcmlwdGlvbj4x67KIIOq1reuPhCDrk5zrnbzsnbTruIwg7Y+s7Yag7Iqk7YyfPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3NfbmF0dXJlPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuMzk0LDM3LjE4MiwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPlRoZSBMb25lIEN5cHJlc3MgKDE3LU1pbGUpPC9uYW1lPjxkZXNjcmlwdGlvbj7thrXtlonro4wg7LCo65+J64u5ICQxMi41MDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX25hdHVyZTwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIxLjk2NiwzNi41Njg2LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+Qml4YnkgQ3JlZWsgQnJpZGdlPC9uYW1lPjxkZXNjcmlwdGlvbj7ruYXshJwg6rWs6rCE7J2YIOyDgeynlTwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX25hdHVyZTwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIxLjkwMiwzNi4zNzE0LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjwvRm9sZGVyPgo8Rm9sZGVyPjxuYW1lPuunm+ynkcK366eI7Yq4PC9uYW1lPgo8UGxhY2VtYXJrPjxuYW1lPkNvc3RjbyDrp4jsmrTti7Trt7A8L25hbWU+PGRlc2NyaXB0aW9uPuywqCA167aELiDtlZzqta0g7L2U7Iqk7Yq47L2UIOy5tOuTnCDsgqzsmqkg6rCA64qlPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3NfZm9vZDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjA5NjgsMzcuNDA1MywwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPlRyYWRlciBKb2UmI3gyNztzIOuniOyatO2LtOu3sDwvbmFtZT48ZGVzY3JpcHRpb24+7LCoIDXrtoQuIOqwhO2OuOyLncK37JmA7J24IOqwgOyEseu5hCDstZzqs6A8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19mb29kPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuMTA4LDM3LjQsMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5XaG9sZSBGb29kcyDroZzsiqTslYzthqDsiqQ8L25hbWU+PGRlc2NyaXB0aW9uPuywqCA467aELiDsnKDquLDrho3Ct+yDkOufrOuTnOuwlDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX2Zvb2Q8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi4xMTMsMzcuNDAyLDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+OTkgUmFuY2ggTWFya2V0PC9uYW1lPjxkZXNjcmlwdGlvbj7slYTsi5zslYgg7Iud66OM7ZKILiDslaDtlIztjIztgawg6rCA64qUIOuCoCDrrLbquLA8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19mb29kPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuMDE0NSwzNy4zMzM1LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+U2FuIFBlZHJvIFNxdWFyZSBNYXJrZXQ8L25hbWU+PGRlc2NyaXB0aW9uPuuLpOyatO2DgOyatCDtkbjrk5ztmYA8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19mb29kPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjEuODk0LDM3LjMzNywwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPkggTWFydCDsgrDtmLjshLg8L25hbWU+PGRlc2NyaXB0aW9uPu2VnOq1rSDsi53ro4ztkoggKyDtkbjrk5zsvZTtirg8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc19mb29kPC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuMDMzLDM3LjMxMSwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8L0ZvbGRlcj4KPEZvbGRlcj48bmFtZT7qtZDthrXCt+yjvOywqDwvbmFtZT4KPFBsYWNlbWFyaz48bmFtZT5Nb3VudGFpbiBWaWV3IFRyYW5zaXQgQ2VudGVyPC9uYW1lPjxkZXNjcmlwdGlvbj5DYWx0cmFpbiArIFZUQSDsmKTroIzsp4Drnbzsnbgg7ZeI67iMPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3NfdHJhbnNpdDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjA3NjIsMzcuMzk0NCwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPlBhbG8gQWx0byBDYWx0cmFpbiDsl608L25hbWU+PGRlc2NyaXB0aW9uPuuniOyatO2LtOu3sOyXkOyEnCAx7KCV6rGw7J6lIDjrtoQuIOuniOqxsOumrO2KuCDshZTti4Ag7ZmY7Iq5PC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3NfdHJhbnNpdDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjE2NSwzNy40NDM3LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+U2FuIEpvc2UgRGlyaWRvbiDsl608L25hbWU+PGRlc2NyaXB0aW9uPkNhbHRyYWluIDI167aELiDri6TsmrTtg4DsmrTquYzsp4Ag64+E67O0IDE1fjIw67aEPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3NfdHJhbnNpdDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIxLjkwMjgsMzcuMzI5NywwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPlBpZXIgMzMgKOyVjOy5tO2KuOudvOymiCDsirnshKApPC9uYW1lPjxkZXNjcmlwdGlvbj7slYzsubTtirjrnbzspogg7Y6Y66asIOy2nOuwnOyngDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3RyYW5zaXQ8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi40MDUsMzcuODA4LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+U3V0dGVyLVN0b2NrdG9uIEdhcmFnZTwvbmFtZT48ZGVzY3JpcHRpb24+7Jyg64uI7Ja47Iqk7YCY7Ja0LiAxMuyLnOqwhCAkNDAsIDI07Iuc6rCEIOyatOyYgTwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3RyYW5zaXQ8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi40MDcsMzcuNzg5NywwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPlVuaW9uIFNxdWFyZSBHYXJhZ2U8L25hbWU+PGRlc2NyaXB0aW9uPu2PieydvCA5OjMwIOyghCDsnoXssKgg7IucIOyWvOumrOuyhOuTnCAkMjA8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc190cmFuc2l0PC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuNDA3NSwzNy43ODg1LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+UElFUiAzOSBHYXJhZ2U8L25hbWU+PGRlc2NyaXB0aW9uPu2UvOyFlOunqOyKpOybjO2UhMK37JWM7Lm07Yq465287KaI7JqpLiAyNOyLnOqwhDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3RyYW5zaXQ8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi40MTEsMzcuODA3OCwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPlBlcmZvcm1pbmcgQXJ0cyBHYXJhZ2U8L25hbWU+PGRlc2NyaXB0aW9uPu2XpOydtOymiOuwuOumrCDso7zssKjripQg7Jes6riwPC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3NfdHJhbnNpdDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjQyLDM3Ljc3OCwwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPk11c2ljIENvbmNvdXJzZSBHYXJhZ2U8L25hbWU+PGRlc2NyaXB0aW9uPuqzqOuToOqyjOydtO2KuO2MjO2BrC4gMeydvCDstZzrjIAgJDM1PC9kZXNjcmlwdGlvbj48c3R5bGVVcmw+I3NfdHJhbnNpdDwvc3R5bGVVcmw+PFBvaW50Pjxjb29yZGluYXRlcz4tMTIyLjQ2NywzNy43NywwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8UGxhY2VtYXJrPjxuYW1lPkNhbHRyYWluIFNGICg0dGggJmFtcDsgS2luZyk8L25hbWU+PGRlc2NyaXB0aW9uPkNhbHRyYWluIOyDjO2UhOuegOyLnOyKpOy9lCDsooXsoJA8L2Rlc2NyaXB0aW9uPjxzdHlsZVVybD4jc190cmFuc2l0PC9zdHlsZVVybD48UG9pbnQ+PGNvb3JkaW5hdGVzPi0xMjIuMzk0NywzNy43NzY2LDA8L2Nvb3JkaW5hdGVzPjwvUG9pbnQ+PC9QbGFjZW1hcms+CjxQbGFjZW1hcms+PG5hbWU+U0pDIOyCsO2YuOyEuCDqs7Xtla08L25hbWU+PGRlc2NyaXB0aW9uPuyImeyGjOyXkOyEnCDssKggMjDrtoQuIExB7ZaJIOy1nOyggTwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3RyYW5zaXQ8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMS45Mjg5LDM3LjM2MzksMDwvY29vcmRpbmF0ZXM+PC9Qb2ludD48L1BsYWNlbWFyaz4KPFBsYWNlbWFyaz48bmFtZT5TRk8g7IOM7ZSE656A7Iuc7Iqk7L2UIOqzte2VrTwvbmFtZT48ZGVzY3JpcHRpb24+7IiZ7IaM7JeQ7IScIOywqCAzMH40MOu2hDwvZGVzY3JpcHRpb24+PHN0eWxlVXJsPiNzX3RyYW5zaXQ8L3N0eWxlVXJsPjxQb2ludD48Y29vcmRpbmF0ZXM+LTEyMi4zNzksMzcuNjIxMywwPC9jb29yZGluYXRlcz48L1BvaW50PjwvUGxhY2VtYXJrPgo8L0ZvbGRlcj4KPC9Eb2N1bWVudD48L2ttbD4="
+         style="display:inline-block;background:var(--gold);color:#fff;padding:7px 14px;border-radius:8px;font-weight:700;font-size:12.6px;text-decoration:none">↓ .kml 파일 내려받기</a>
+    </div>
+  </details>
+  <p style="font-size:12.3px;color:var(--ink3);margin-top:10px">핀 위치는 대략적인 좌표입니다. 정확한 위치와 길찾기는 각 핀의 <b>구글맵</b> 링크를 눌러 확인하세요.</p>
+</section>
+
+<!-- 1 한눈에 -->
+<section id="quick">
+  <h2><span class="n">1</span>한눈에 보기</h2>
+  <p class="lead">이번 버전의 컨셉은 <b>"하루에 3~4곳, 오후는 카페와 거리"</b>입니다. 아침에 하나 크게 보고, 점심 먹고, 오후엔 쇼핑이나 카페에서 늘어지는 페이스로 짰습니다.</p>
+
+  <div class="alert">
+    <b>지금 예약할 것은 사실상 하나뿐입니다 — 알카트라즈.</b><br>
+    9월은 성수기라 2~4주 전에 매진됩니다. 날짜 정해지면 바로 잡으세요. 뮤어우즈에 가실 거라면 그것도 주차·셔틀 예약이 필수인데, 자연 비중을 줄이셨으니 안 가셔도 무방합니다.
+  </div>
+
+  <div class="alert">
+    <b>여행 기간에 걸린 휴관·폐업 — 일정에 이미 반영했습니다.</b><br>
+    · <b>SFMOMA는 9/14(월)~9/16(수) 비공개 행사로 휴관.</b> 그래서 SF 셋째 날을 9/17(목)로 잡았고, 목요일은 20시까지 야간개장이라 오히려 좋습니다.<br>
+    · <b>스탠퍼드 후버타워 전망대</b> — 2026.8.14~2027.1.25 휴관. 캠퍼스 산책으로 대체했습니다.<br>
+    · <b>애플파크 비지터센터 AR 전시공간</b> — 개보수로 임시 휴관. 스토어·카페·루프탑은 정상입니다.
+  </div>
+
+  <div class="tip">
+    <b>쇼핑 계획 세우기 전에 꼭 아셔야 할 것 3가지.</b><br>
+    ① <b>무지(MUJI)는 베이 에어리어에 한 곳도 없습니다.</b> 2020년에 캘리포니아 전 매장이 철수했습니다. 일정에서 빼세요.<br>
+    ② <b>유니언스퀘어 웨스트필드 몰은 2026년 1월에 영구 폐업</b>했습니다. 노드스트롬·블루밍데일스·메이시스 본점도 모두 철수. 다만 <b>닌텐도 SF 플래그십·BAPE</b> 같은 새 매장이 들어와서 "몰 쇼핑"이 아니라 "특정 매장만 찍고 나오는" 곳이 됐습니다.<br>
+    ③ <b>이치반칸(Ichiban Kan)</b>은 재팬타운 지점이 폐점했습니다. 같은 성격의 <b>다이소</b>로 가세요.
+  </div>
+
+  <h3>날씨와 옷차림</h3>
+  <div class="tbl-scroll">
+  <table>
+    <tr><th>지역</th><th>낮</th><th>아침·저녁</th><th>준비물</th></tr>
+    <tr><td><b>마운틴뷰 · 실리콘밸리</b></td><td>24–29°C, 강한 햇볕</td><td>13–16°C</td><td>반팔 + 선글라스. 저녁엔 얇은 겉옷</td></tr>
+    <tr><td><b>샌프란시스코 시내</b></td><td>18–23°C</td><td>13°C, 아침 안개</td><td>레이어드. 바람막이 필수</td></tr>
+    <tr><td><b>금문교 · 해안</b></td><td>15–19°C, 강풍</td><td>쌀쌀함</td><td>플리스/패딩조끼. 여기가 제일 춥습니다</td></tr>
+  </table>
+  </div>
+  <div class="note">같은 날에도 마운틴뷰는 반팔, 금문교는 겉옷 두 겹입니다. <b>차 트렁크에 겉옷을 상시 두고 다니세요.</b> 부모님 것도요. 비는 9월에 거의 오지 않습니다.</div>
+</section>
+
+<!-- 2 일정 -->
+<section id="itin">
+  <h2><span class="n">2</span>날짜별 일정안</h2>
+  <p class="lead">날짜를 눌러 펼쳐보세요. 하루 3~4개 스팟만 넣었고, 저녁은 대부분 비워뒀습니다.</p>
+
+  <details class="day" open>
+    <summary><div class="dnum"><b>9/10</b><i>목</i></div>
+      <div class="dtitle"><b>도착 · 마운틴뷰 정착</b><span>장보기 + Castro Street 저녁 · 무리하지 않는 날</span></div><div class="chev">▶</div></summary>
+    <div class="dbody"><ul class="tl">
+      <li><time>도착 후</time><div><b>숙소 정착 &amp; Clipper 카드 세팅</b><p>온 가족 폰에 Clipper를 애플월렛/구글월렛으로 추가해두세요. 이것만 해두면 남은 8일 대중교통이 다 해결됩니다. (아래 <a href="#transit">대중교통</a> 섹션 참고)</p></div></li>
+      <li><time>오후</time><div><b>Trader Joe's · Costco 장보기</b><p>둘 다 차로 5분. 물, 과일, 아침거리부터. 한국 식료품은 며칠 뒤 H Mart에서 몰아서.</p></div></li>
+      <li><time>저녁</time><div><b>Castro Street 산책 &amp; 저녁</b><p>숙소에서 도보 15~20분. 두 블록 안에 한식·일식·이탈리안·독일식 비어가든까지 다 있습니다. 첫날은 여기서 끝.</p></div></li>
+    </ul>
+    <div class="note">시차 적응 팁 — 낮잠은 30분 이내, 밤 9~10시 취침. 첫날 관광을 넣지 않는 게 남은 8일을 살립니다.</div></div>
+  </details>
+
+  <details class="day">
+    <summary><div class="dnum"><b>9/11</b><i>금</i></div>
+      <div class="dtitle"><b>스탠퍼드 &amp; 팔로알토</b><span>캠퍼스 + 스탠퍼드 쇼핑센터 · <b>대중교통으로 가능</b></span></div><div class="chev">▶</div></summary>
+    <div class="dbody"><ul class="tl">
+      <li><time>10:30</time><div><b>Caltrain 마운틴뷰 → 팔로알토</b><p>딱 한 정거장, 8분. 성인 $4.00(1존). 역 바로 옆 Transit Center에서 <b>스탠퍼드 마거리트 셔틀(무료)</b>로 캠퍼스까지.</p></div></li>
+      <li><time>11:00</time><div><b>스탠퍼드 메인 쿼드 &amp; 메모리얼 처치</b><p>사암 아치와 야자수 대로. 무료. 캠퍼스가 워낙 넓으니 쿼드 주변만 천천히 도세요.</p></div></li>
+      <li><time>12:30</time><div><b>Cantor Arts Center + 로댕 조각정원</b><p><b>입장 무료.</b> 금요일 11–18시. '지옥의 문'이 야외에 있습니다. 건축·미술 좋아하시면 여기가 팔로알토의 하이라이트입니다.</p></div></li>
+      <li><time>14:00</time><div><b>점심 — University Avenue</b><p>스탠퍼드 정문에서 이어지는 상점가. Coupa Cafe(538 Ramona St)가 이 동네 터줏대감입니다.</p></div></li>
+      <li><time>16:00</time><div><b>Stanford Shopping Center</b><p>야외형 고급 쇼핑몰, 주차 무료. <b>2026년에만 새 브랜드 17곳이 들어온 곳</b>이라 베이 에어리어 몰 중에 지금 제일 상태가 좋습니다. 저녁까지 여유롭게.</p></div></li>
+    </ul>
+    <div class="note">차로 가셔도 됩니다(15분). 다만 스탠퍼드 캠퍼스 주차가 은근히 번거로워서 <b>Caltrain + 무료 셔틀 조합이 실제로 더 편합니다.</b></div></div>
+  </details>
+
+  <details class="day">
+    <summary><div class="dnum"><b>9/12</b><i>토</i></div>
+      <div class="dtitle"><b>샌프란시스코 DAY 1 — 서쪽</b><span>금문교 · 헤이즈밸리 · 페리빌딩 · <b>자차</b></span></div><div class="chev">▶</div></summary>
+    <div class="dbody"><ul class="tl">
+      <li><time>08:30</time><div><b>숙소 출발 — I-280 북상</b><p>토요일 아침이라 한산합니다. 약 50분. <b>101보다 280이 훨씬 예쁘고</b> 크리스탈 스프링스 저수지를 지납니다.</p></div></li>
+      <li><time>09:40</time><div><b>Crissy Field — 금문교 조망</b><p>평지·잔디·화장실이 있어서 부모님과 다니기 제일 편한 뷰포인트입니다. 무료 주차 있음. 다리 위를 조금 걸어보셔도 좋습니다.</p></div></li>
+      <li><time>11:00</time><div><b>Palace of Fine Arts</b><p>차로 5분. 로마 신전 같은 로툰다와 백조 연못. 사진이 제일 잘 나오는 곳 중 하나이고, 15~20분이면 충분합니다.</p></div></li>
+      <li><time>12:30</time><div><b>Hayes Valley — 오늘의 메인 ★</b><p>차를 <b>Performing Arts Garage(360 Grove St)</b>에 넣고 걸어서 도세요. SF에서 <b>지금 제일 예쁘고 트렌디한 동네</b>입니다. 부티크·라이프스타일숍·카페가 Patricia's Green 주변에 몰려 있습니다. 점심과 커피까지 여기서.</p></div></li>
+      <li><time>16:00</time><div><b>Ferry Building Marketplace</b><p><b>토요일 파머스마켓 8–14시가 최대 규모</b>지만 오후에 가도 상설 마켓홀은 다 열려 있습니다. Heath Ceramics(SF 대표 도자기 브랜드)와 Book Passage가 여기 있습니다.</p></div></li>
+      <li><time>18:00</time><div><b>저녁 후 귀가</b><p>퇴근 정체 없는 토요일이라 편합니다.</p></div></li>
+    </ul></div>
+  </details>
+
+  <details class="day">
+    <summary><div class="dnum"><b>9/13</b><i>일</i></div>
+      <div class="dtitle"><b>샌프란시스코 DAY 2 — 북동쪽</b><span>알카트라즈 · 케이블카 · 유니언스퀘어 · <b>자차</b></span></div><div class="chev">▶</div></summary>
+    <div class="dbody"><ul class="tl">
+      <li><time>09:00</time><div><b>출발 → Pier 39 Garage 주차</b><p>여기에 차를 넣고 <b>하루 종일 걷거나 케이블카로 이동</b>하는 게 정답입니다. 이 동네에서 차를 계속 옮기면 하루가 다 갑니다.</p></div></li>
+      <li><time>10:30</time><div><b>알카트라즈 섬</b><p>Pier 33 출발. 한국어 오디오가이드가 있고, 실제 수감자·교도관 증언으로 만든 구성이 정말 좋습니다. 왕복 2.5~3시간.</p></div></li>
+      <li><time>14:00</time><div><b>Pier 39 · 피셔맨스워프 점심</b><p>바다사자 무리는 무료. 클램차우더 한 번은 드셔보시고.</p></div></li>
+      <li><time>15:30</time><div><b>케이블카 Powell–Hyde 라인</b><p>편도 $9. 롬바드 스트리트를 지나 유니언스퀘어까지. 종점 줄이 길면 <b>중간 정류장에서 타세요.</b></p></div></li>
+      <li><time>16:30</time><div><b>Union Square — 닌텐도 SF 플래그십</b><p>331 Powell St. 2025년에 문 연 미국 두 번째 닌텐도 스토어로 <b>여기서만 파는 굿즈</b>가 많습니다. IT 하시는 두 분께는 여기가 유니언스퀘어의 유일한 이유입니다. 근처에 BAPE 첫 SF 매장(216 Stockton St)도 있습니다.</p></div></li>
+      <li><time>18:00</time><div><b>차이나타운 저녁 → 귀가</b><p>Dragon Gate에서 Grant Ave를 따라 걸어 내려오면 Pier 39 쪽으로 자연스럽게 이어집니다.</p></div></li>
+    </ul>
+    <div class="alert"><b>알카트라즈를 못 잡았다면</b> 대신 Blue &amp; Gold 만 크루즈(금문교 아래를 지납니다)로 대체하고, 남는 시간을 <b>Musée Mécanique</b>(Pier 45, 무료 입장·동전 넣고 노는 100년 된 아케이드 박물관)에 쓰세요. 의외로 만족도가 높습니다.</div></div>
+  </details>
+
+  <details class="day">
+    <summary><div class="dnum"><b>9/14</b><i>월</i></div>
+      <div class="dtitle"><b>애플파크 &amp; 산타나로 쇼핑 데이 ★</b><span>월요일 휴관이 많은 날이라 쇼핑에 최적 · <b>자차</b></span></div><div class="chev">▶</div></summary>
+    <div class="dbody">
+      <div class="note">월요일은 컴퓨터역사박물관·칸토어·드영·익스플로라토리움이 전부 휴관입니다. 그래서 <b>이날을 통째로 쇼핑에 배정</b>했습니다.</div>
+      <ul class="tl">
+      <li><time>11:00</time><div><b>Apple Park Visitor Center</b><p>10600 N Tantau Ave. 차로 20분, 무료. 루프탑 테라스에서 우주선 사옥 조망. <b>여기서만 파는 애플파크 한정 굿즈</b>(무지개 로고 후드·모자·스테인리스 물병)가 목적입니다.</p></div></li>
+      <li><time>12:30</time><div><b>Daiso 쿠퍼티노 + 점심</b><p>19750 Stevens Creek Blvd. 애플파크에서 바로. 소품 쇼핑 워밍업.</p></div></li>
+      <li><time>14:00</time><div><b>Intel Museum</b><p>2200 Mission College Blvd. <b>평일만 운영, 무료.</b> 1시간이면 충분하고 반도체 공정 전시가 알찹니다. 관심 없으면 건너뛰고 바로 산타나로로.</p></div></li>
+      <li><time>15:30</time><div><b>Westfield Valley Fair</b><p>2855 Stevens Creek Blvd. 베이 에어리어 최대 실내몰. 럭셔리 윙(루이비통 등)과 일반 윙이 연결돼 있고 <b>딘타이펑·이탈리도</b> 들어와 있습니다.</p></div></li>
+      <li><time>17:30</time><div><b>Santana Row — 저녁까지 ★★</b><p>길 하나 건너면 바로입니다. <b>해질녘부터가 진짜</b>예요. 스트링 조명, 분수, 야외 테라스 식당이 쭉 이어집니다. 저녁 먹고 커피 마시고 늘어지기 딱 좋습니다.</p></div></li>
+    </ul></div>
+  </details>
+
+  <details class="day">
+    <summary><div class="dnum"><b>9/15</b><i>화</i></div>
+      <div class="dtitle"><b>산호세 다운타운</b><span>대중교통으로 가능 · 여유롭게 반나절</span></div><div class="chev">▶</div></summary>
+    <div class="dbody"><ul class="tl">
+      <li><time>10:30</time><div><b>Caltrain 마운틴뷰 → San Jose Diridon</b><p>약 20~25분, 성인 $6.25(2존). Diridon에서 다운타운까지 도보 15~20분 또는 VTA 그린라인 한 정거장.</p></div></li>
+      <li><time>11:30</time><div><b>San Pedro Square Market</b><p>87 N San Pedro St. 다양한 벤더가 모인 푸드홀. 점심으로 각자 다른 거 시켜서 나눠 먹기 좋습니다.</p></div></li>
+      <li><time>13:30</time><div><b>The Tech Interactive</b> <span style="color:var(--ink3);font-size:12px">(선택)</span><p>201 S Market St. 성인 $38, IMAX 돔 영화 1편 포함. 체험형이라 IT 하시는 분들은 오히려 시시할 수 있으니, <b>부모님이 좋아하실 것 같으면 넣고 아니면 빼세요.</b></p></div></li>
+      <li><time>15:00</time><div><b>다운타운 카페 &amp; 산책</b><p>Nirvana Soul(핑크 천장), Dr.ink(미니멀 콘크리트) 같은 감각적인 카페들이 다운타운에 있습니다.</p></div></li>
+      <li><time>17:00</time><div><b>귀가 — Caltrain</b></div></li>
+    </ul>
+    <div class="note">산타나로를 <b>9/14에 안 가고 이날 저녁으로 미루셔도</b> 됩니다. 다만 Diridon에서 산타나로까지는 대중교통이 애매해서(버스 환승 40분+) Waymo나 우버를 쓰시는 게 낫습니다.</div></div>
+  </details>
+
+  <details class="day">
+    <summary><div class="dnum"><b>9/16</b><i>수</i></div>
+      <div class="dtitle"><b>구글 본사 &amp; 컴퓨터역사박물관 ★</b><span>둘 다 N Shoreline Blvd · 서로 도보 거리</span></div><div class="chev">▶</div></summary>
+    <div class="dbody">
+      <div class="tip"><b>동선이 완벽한 날입니다.</b> Google Visitor Experience(2000 N Shoreline)와 컴퓨터역사박물관(1401 N Shoreline)이 <b>같은 길에 도보 거리</b>이고, 숙소에서 차로 7분입니다. 수요일이라 CHM도 열고 구글 캠퍼스도 사람이 제일 많은 요일입니다.</div>
+      <ul class="tl">
+      <li><time>10:00</time><div><b>형과 구글 캠퍼스 투어</b><p>인턴 배지로 게스트 동반이 가능합니다. 자세한 건 아래 <a href="#google">구글 본사 방문 가이드</a> 섹션에 정리했습니다.</p></div></li>
+      <li><time>12:00</time><div><b>구글 캠퍼스 카페에서 점심</b><p>직원 동반 시 게스트 식사가 가능한 경우가 많습니다. 형에게 미리 확인하세요. 이게 이번 여행에서 부모님이 제일 좋아하실 순간일 겁니다.</p></div></li>
+      <li><time>14:00</time><div><b>Google Visitor Experience &amp; 구글 스토어</b><p>일반 개방 공간. 무료. 구글 굿즈 쇼핑과 인증샷. 월–토 9–19시.</p></div></li>
+      <li><time>15:00</time><div><b>컴퓨터 역사 박물관</b><p>걸어서 이동. 수–일 10–17시. 에니악부터 애플 I, 크레이 슈퍼컴퓨터, 구글 첫 서버, 자율주행차까지. <b>IT 하시는 두 분께는 이번 여행 최고의 2~3시간</b>이 될 겁니다.</p></div></li>
+      <li><time>18:00</time><div><b>Shoreline Park 노을 (선택)</b><p>박물관에서 차로 3분. 굳이 걷지 않아도 주차장에서 노을만 보고 오셔도 됩니다.</p></div></li>
+    </ul></div>
+  </details>
+
+  <details class="day">
+    <summary><div class="dnum"><b>9/17</b><i>목</i></div>
+      <div class="dtitle"><b>샌프란시스코 DAY 3 — 로컬 동네</b><span>재팬타운 · 미션 · SFMOMA 야간 · <b>자차</b></span></div><div class="chev">▶</div></summary>
+    <div class="dbody"><ul class="tl">
+      <li><time>10:30</time><div><b>Japantown — Kinokuniya · Maido · Daiso</b><p>1581 Webster St 일대. <b>기노쿠니야 서점(디자인·문구·만화)</b>과 <b>마이도 문구점(2개 층)</b>이 이번 여행 소품샵 쇼핑의 핵심입니다. Japan Center Mall 안에 다 모여 있어서 한 번에 해결됩니다.</p></div></li>
+      <li><time>12:30</time><div><b>점심 — 재팬타운 라멘 / 크레페</b></div></li>
+      <li><time>14:00</time><div><b>Divisadero — Rare Device</b><p>600 Divisadero St. 큐레이션 좋은 디자인·기프트숍. 딱 이 가게 하나만 보고 나와도 됩니다. 근처 카페들도 좋습니다.</p></div></li>
+      <li><time>15:30</time><div><b>Mission — Valencia Street</b><p>Paxton Gate(기괴한 박제·식물 큐리오숍), Dandelion Chocolate, Silver Sprocket(만화·진). 벽화 골목(Clarion Alley)도 이 근처입니다. Tartine Bakery는 여기가 본점.</p></div></li>
+      <li><time>17:30</time><div><b>SFMOMA 야간개장</b><p>151 Third St. <b>목요일은 12–20시</b>라 저녁에 한산합니다. 성인 $30. 7층 규모, 옥상 조각정원과 리빙월.</p></div></li>
+      <li><time>20:00</time><div><b>저녁 후 귀가</b><p>목요일 저녁이라 남행 정체가 거의 풀린 시간입니다.</p></div></li>
+    </ul>
+    <div class="note"><b>대안 —</b> 도시가 물리셨다면 이날을 <b>하프문베이 해안 드라이브</b>로 바꾸세요. Hwy 92로 45분, 절벽 산책 + 바다 앞 랍스터롤 점심이면 반나절로 충분합니다.</div></div>
+  </details>
+
+  <details class="day">
+    <summary><div class="dnum"><b>9/18</b><i>금</i></div>
+      <div class="dtitle"><b>LA로 이동</b><span>비행기(SJC 20분) vs 1번 국도 드라이브</span></div><div class="chev">▶</div></summary>
+    <div class="dbody">
+      <h3 style="margin-top:8px">A안 · 비행기</h3>
+      <p style="font-size:13.7px;color:var(--ink2);margin-top:0">숙소에서 <b>SJC(산호세) 차로 20분</b>이 제일 가깝습니다. SFO는 30~40분. LAX까지 비행 1시간 20분.</p>
+      <h3>B안 · 1번 국도 (렌터카를 LA에서 반납한다면 이쪽을 추천합니다)</h3>
+      <ul class="tl">
+        <li><time>08:00</time><div><b>출발 → 몬터레이</b><p>1시간 30분.</p></div></li>
+        <li><time>10:00</time><div><b>Monterey Bay Aquarium</b><p>성인 $65. 대형 켈프 숲 수조와 해달. 2시간.</p></div></li>
+        <li><time>13:00</time><div><b>17-Mile Drive &amp; 카멜</b><p>통행료 차량당 $12.50. The Lone Cypress. 카멜은 동화 같은 마을이라 부모님이 좋아하십니다.</p></div></li>
+        <li><time>16:00</time><div><b>빅서 구간 남하 → 1박</b><p>Bixby Bridge, McWay Falls. <b>LA까지 총 8~10시간</b>이라 하루에 다 하면 아무것도 못 봅니다. 캄브리아나 산타바바라에서 끊으세요.</p></div></li>
+      </ul>
+      <div class="alert">1번 국도는 산사태 통제가 잦습니다. 출발 전 <b>Caltrans QuickMap</b>에서 Hwy 1 상태를 반드시 확인하세요.</div>
+    </div>
+  </details>
+</section>
+
+<!-- 3 쇼핑 -->
+<section id="shop">
+  <h2><span class="n">3</span>쇼핑 — 몰 &amp; 거리 ★</h2>
+  <p class="lead">이번 여행의 중심축입니다. 실리콘밸리 쪽 몰과 샌프란시스코 쪽 거리로 나눠 정리했습니다.</p>
+
+  <h3>실리콘밸리 — 몰</h3>
+  <div class="grid wide">
+
+    <div class="card feature">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/300_Santana_Row,_San_Jose,_in_winter.JPG?width=1200" alt="Santana Row" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t pick">이번 여행 최애 후보</span><span class="t shop">쇼핑</span><span class="t car">차 20분</span></div>
+        <h4><a href="https://maps.google.com/?q=Santana+Row+San+Jose" target="_blank">Santana Row</a></h4>
+        <p class="en">377 Santana Row, San Jose · 야외형</p>
+        <p>유럽 마을을 통째로 옮겨놓은 콘셉트의 야외 쇼핑·레스토랑 거리입니다. 위층이 실제 주거라 <b>관광지가 아니라 사람 사는 동네 느낌</b>이 나고, 그게 다른 몰과 결정적으로 다른 점입니다. 스트링 조명, 분수, 가로수, 야외 테라스 좌석이 쭉 이어져서 <b>해질녘부터 밤까지가 제일 예쁩니다.</b></p>
+        <dl>
+          <dt>쇼핑</dt><dd>Lululemon 등 라이프스타일·애슬레저 중심 + 인테리어·뷰티 편집숍. 명품보다는 <b>실제로 사서 입을 만한 브랜드</b> 위주</dd>
+          <dt>먹거리</dt><dd>야외 테라스 레스토랑이 거리 전체에 깔려 있습니다. 브런치·스테이크·아시안·지중해식까지 다양하고, 2026년에 Cava 베이 에어리어 1호점이 들어왔습니다. <b>매장 구성은 자주 바뀌니 당일 구글맵에서 확인하세요</b></dd>
+          <dt>주차</dt><dd>지상·지하 모두 무료. 주말 저녁은 지하로 바로 들어가는 게 빠릅니다</dd>
+          <dt>추천</dt><dd><b>오후 5시쯤 도착 → 쇼핑 → 저녁 → 커피</b> 흐름이 가장 좋습니다</dd>
+        </dl>
+        <p style="margin-bottom:0"><b>보너스 —</b> 길 하나 건너면 바로 <b>Westfield Valley Fair</b>입니다. 야외(산타나로) + 실내(밸리페어)를 한 번의 주차로 다 볼 수 있어서, 사실상 이 두 곳이 이번 여행 쇼핑의 본진입니다.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Westfield_Valley_Fair_1838_18.JPG?width=800" alt="Westfield Valley Fair" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t shop">쇼핑</span><span class="t car">차 20분</span></div>
+        <h4><a href="https://maps.google.com/?q=Westfield+Valley+Fair" target="_blank">Westfield Valley Fair</a></h4>
+        <p class="en">2855 Stevens Creek Blvd, Santa Clara · 실내</p>
+        <p>베이 에어리어 최대 실내몰. 확장 공사 이후 <b>럭셔리 윙과 일반 윙이 연결</b>된 구조입니다. 루이비통 같은 명품부터 일반 브랜드까지 한 건물에 있고, <b>딘타이펑·이탈리</b> 같은 식당도 들어와 있습니다.</p>
+        <dl><dt>추천</dt><dd>비 오거나 더울 때, 그리고 산타나로 가기 전 낮 시간</dd></dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Stanford_Shopping_Center_1.jpg?width=800" alt="Stanford Shopping Center" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t shop">쇼핑</span><span class="t transit">Caltrain</span></div>
+        <h4><a href="https://maps.google.com/?q=Stanford+Shopping+Center" target="_blank">Stanford Shopping Center</a></h4>
+        <p class="en">660 Stanford Shopping Center, Palo Alto · 야외형</p>
+        <p>스탠퍼드 캠퍼스 옆 야외 고급몰. <b>2026년에만 신규 브랜드 17곳이 들어온 "리테일 르네상스"</b> 상태라 지금 베이 에어리어 몰 중 가장 활기 있습니다. Reformation, On Running, Ralph Lauren, Arhaus, Bang &amp; Olufsen 등.</p>
+        <dl><dt>주차</dt><dd>무료</dd><dt>접근</dt><dd>팔로알토 Caltrain역에서 도보 10~15분</dd></dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/USA-Los_Gatos-50-68_West_Main_Street.jpg?width=800" alt="Downtown Los Gatos" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t shop">쇼핑</span><span class="t cafe">카페</span><span class="t car">차 25분</span></div>
+        <h4><a href="https://maps.google.com/?q=Downtown+Los+Gatos" target="_blank">Downtown Los Gatos</a></h4>
+        <p>산기슭 부촌의 예쁜 다운타운. Anthropologie·Sephora·Warby Parker 같은 브랜드에 <b>인디 부티크가 섞여</b> 있어서 몰과는 결이 다릅니다. 일요일 파머스마켓. 반나절 여유 있게 걷기 좋습니다.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="bd">
+        <div class="tags"><span class="t shop">아울렛</span><span class="t car">차 50분</span></div>
+        <h4>San Francisco Premium Outlets</h4>
+        <p class="en">2774 Livermore Outlets Dr, Livermore</p>
+        <p>아울렛을 딱 하나만 가신다면 <b>여기</b>입니다. 길로이보다 가깝고 시설이 더 낫습니다. 180여 개 매장 + Saks Off 5th.</p>
+        <dl><dt>비교</dt><dd>Gilroy는 더 크지만 1시간 거리에 야외 스트립몰 느낌 · Great Mall(밀피타스)은 실내 아울렛이지만 예쁘진 않습니다</dd></dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Castro_Street_in_Mountain_View.jpg?width=800" alt="Castro Street Mountain View" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t walk">도보권</span></div>
+        <h4>Castro Street (숙소 도보권)</h4>
+        <p><b>솔직히 쇼핑 거리는 아닙니다.</b> 사실상 식당·바 중심이에요. 대신 걸어갈 수 있는 저녁 식사 장소로는 최고입니다. 쇼핑은 기대하지 마시고 저녁 먹으러만 가세요.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>샌프란시스코 — 거리</h3>
+  <div class="grid wide">
+
+    <div class="card feature">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/San_Francisco_skyline_seen_from_across_the_bay.jpg?width=1200" alt="San Francisco" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t pick">SF 쇼핑 1순위</span><span class="t shop">부티크</span><span class="t cafe">카페</span></div>
+        <h4><a href="https://maps.google.com/?q=Hayes+Valley+San+Francisco" target="_blank">Hayes Valley</a></h4>
+        <p class="en">Hayes St · Patricia's Green 주변</p>
+        <p><b>SF에서 지금 가장 예쁘고 트렌디한 동네</b>입니다. 유니언스퀘어가 무너진 뒤 SF 부티크 쇼핑의 중심이 여기로 완전히 옮겨왔어요. 작은 공원(Patricia's Green)을 중심으로 대여섯 블록에 편집숍·라이프스타일숍·카페가 촘촘히 붙어 있어서, <b>반나절 걸어 다니며 노는 데 최적</b>입니다.</p>
+        <dl>
+          <dt>패션</dt><dd>Lisa Says Gah, Oak + Fort, M.A.C.(Modern Appealing Clothing), A.P.C., Clare V., Mejuri, Aether</dd>
+          <dt>아웃도어</dt><dd>Cotopaxi, Topo Designs, <b>Peak Design</b>(카메라 가방·테크 액세서리 — 두 분 취향에 딱)</dd>
+          <dt>홈·인테리어</dt><dd>Minimal, Parachute, Interior Define</dd>
+          <dt>카페</dt><dd><b>Ritual Coffee</b>(공원 앞), <b>Blue Bottle 원조 키오스크</b>, Mercury Cafe, <b>Miette</b>(파스텔 톤 디저트숍 — 사진 맛집)</dd>
+          <dt>주차</dt><dd>Performing Arts Garage(360 Grove St) 또는 Civic Center Garage(355 McAllister St)</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/View_of_the_Ferry_Building_from_Treasure_Island,_San_Francisco_dllu.jpg?width=800" alt="Ferry Building" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t shop">쇼핑</span><span class="t cafe">먹거리</span></div>
+        <h4><a href="https://www.ferrybuildingmarketplace.com/" target="_blank">Ferry Building Marketplace</a></h4>
+        <p>바닷가 시계탑 건물 안의 상설 마켓홀. <b>Heath Ceramics</b>(SF를 대표하는 미드센추리 도자기 브랜드 — 선물용으로 최고), Bernal Cutlery(칼), Book Passage(서점), Dandelion Chocolate, Recchiuti, Blue Bottle, Hog Island Oyster.</p>
+        <dl><dt>파머스마켓</dt><dd><b>토 8–14시(최대)</b> · 화·목 10–14시</dd></dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="bd">
+        <div class="tags"><span class="t shop">소품샵</span><span class="t pick">추천</span></div>
+        <h4><a href="https://maps.google.com/?q=Japan+Center+San+Francisco" target="_blank">Japantown (Japan Center)</a></h4>
+        <p class="en">1581 Webster St 일대</p>
+        <p>이번 여행 <b>소품샵 쇼핑의 핵심</b>. 한 건물 안에 <b>기노쿠니야 서점</b>(디자인·건축·만화·문구), <b>마이도 문구점</b>(2개 층, 일본 문구 총집합), <b>다이소</b>가 다 모여 있습니다. 평화의 탑 광장과 라멘·크레페 가게도 함께.</p>
+        <dl><dt>주의</dt><dd><span class="dead">이치반칸은 폐점</span>했습니다. 다이소로 가세요</dd></dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mission_District,_San_Francisco,_California_(10754229135).jpg?width=800" alt="Mission District" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t shop">인디</span></div>
+        <h4>Valencia Street (Mission)</h4>
+        <p>헤이즈밸리보다 <b>거칠고 인디한</b> 쪽. Paxton Gate(박제·식물 큐리오숍), Dandelion Chocolate 본점, Silver Sprocket(만화·진), Bernal Cutlery. 벽화 골목(Clarion Alley, Balmy Alley)과 Tartine Bakery 본점이 같은 동네입니다.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Union_Square_-_San_Francisco.jpg?width=800" alt="Union Square" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t tech">닌텐도</span></div>
+        <h4>Union Square — 특정 매장만</h4>
+        <p><span class="dead">웨스트필드 몰은 2026년 1월 영구 폐업</span>, 노드스트롬·블루밍데일스·메이시스 본점도 철수했습니다. <b>"몰 쇼핑"을 기대하고 가면 실망합니다.</b></p>
+        <p style="margin-bottom:0">대신 갈 이유는 명확합니다 — <b>닌텐도 SF 플래그십</b>(331 Powell St, 한정 굿즈·체험존), <b>BAPE</b> 첫 SF 매장(216 Stockton St), The RealReal 럭셔리 중고 플래그십(253 Post St). 공실률은 22%→15%로 회복 중입니다.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Haight_Ashbury11.JPG?width=800" alt="Haight-Ashbury" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t shop">빈티지·레코드</span></div>
+        <h4>Haight-Ashbury</h4>
+        <p>히피 문화의 발상지. 지금은 <b>빈티지 옷가게 거리</b>입니다. 진짜 목적은 <b>Amoeba Music</b>(1855 Haight St) — 세계 최대급 레코드숍이라 음반을 안 사도 구경 자체가 재밌습니다.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="bd">
+        <div class="tags"><span class="t shop">부티크</span></div>
+        <h4>Fillmore · Union · Chestnut Street</h4>
+        <p>세 거리를 비교하면 — <b>Fillmore</b>가 디자인·부티크 밀도가 제일 높고(Paper Source 1925 Fillmore, Jane 베이커리 카페), <b>Union St</b>는 프레피한 부티크 위주, <b>Chestnut</b>은 애슬레저·체인 비중이 높습니다.</p>
+        <dl><dt>우선순위</dt><dd>Fillmore &gt; Union &gt; Chestnut</dd></dl>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 4 소품샵 -->
+<section id="goods">
+  <h2><span class="n">4</span>소품샵 · 디자인숍</h2>
+  <p class="lead">2026년 8월 기준 영업 여부를 확인한 곳만 넣었습니다. 폐업한 곳은 아래 경고에 따로 정리했습니다.</p>
+  <div class="tbl-scroll">
+  <table>
+    <tr><th>가게</th><th>위치</th><th>뭘 파나</th></tr>
+    <tr><td><b>Kinokuniya 기노쿠니야</b></td><td>1581 Webster St, Japantown SF</td><td>일본 서적·디자인/건축 서적·만화·문구. 이번 여행 소품샵 1순위</td></tr>
+    <tr><td><b>Maido</b></td><td>Japan Center, Japantown SF</td><td>2개 층짜리 일본 문구·기프트 전문점. 문구 좋아하면 여기서 시간 다 씁니다</td></tr>
+    <tr><td><b>Daiso</b></td><td>Japan Center SF · <b>쿠퍼티노 19750 Stevens Creek Blvd</b> · 산호세 Eastridge</td><td>100엔숍 스타일. 쿠퍼티노 지점이 숙소에서 제일 가깝습니다</td></tr>
+    <tr><td><b>Rare Device</b></td><td>600 Divisadero St, SF</td><td>큐레이션 좋은 디자인·문구·기프트숍. 딱 이 가게 하나만 보러 가도 아깝지 않습니다</td></tr>
+    <tr><td><b>Heath Ceramics</b></td><td>Ferry Building, SF</td><td>SF 대표 미드센추리 도자기. 부모님 선물이나 집에 두기 좋습니다</td></tr>
+    <tr><td><b>Gravel &amp; Gold</b></td><td>3266 21st St, Mission SF</td><td>캘리포니아 공예·텍스타일 기반 라이프스타일숍</td></tr>
+    <tr><td><b>William Stout Architectural Books</b></td><td>804 Montgomery St, SF</td><td>건축·디자인 전문 서점. 건축 좋아하시면 필수</td></tr>
+    <tr><td><b>Paper Source</b></td><td><b>1925 Fillmore St</b>, SF</td><td>문구·페이퍼 굿즈. SF 다른 두 지점은 폐점했으니 <b>필모어점만</b> 가세요</td></tr>
+    <tr><td><b>Amoeba Music</b></td><td>1855 Haight St, SF</td><td>전설적인 레코드숍. LP·CD·굿즈</td></tr>
+    <tr><td><b>Paxton Gate</b></td><td>Valencia St, Mission SF</td><td>박제·광물·희귀식물 큐리오숍. 취향 타지만 강렬합니다</td></tr>
+    <tr><td><b>Foggy Notion</b></td><td>124 Clement St, Richmond SF</td><td>홈데코·기프트. 동선이 좀 벗어나 있어서 여유 있을 때만</td></tr>
+    <tr><td><b>Case for Making</b></td><td>4037 Judah St, Outer Sunset SF</td><td>수제 물감·아트 재료. 예쁘지만 많이 멉니다</td></tr>
+  </table>
+  </div>
+  <div class="alert">
+    <b>가지 마세요 — 이미 없는 곳들.</b><br>
+    · <b>MUJI</b> — 베이 에어리어/캘리포니아 전체에 매장이 없습니다(2020년 철수). 가장 가까운 곳이 뉴욕·포틀랜드입니다.<br>
+    · <b>Ichiban Kan</b> — 재팬타운·어빙St 지점 모두 폐점. → 다이소로.<br>
+    · <b>The Voyager Shop</b>(Valencia St) — 폐점한 것으로 보입니다. 가시려면 당일 구글맵 확인.<br>
+    · <b>Flax Art &amp; Design</b> — SF 지점 폐점, 오클랜드 지점도 불확실.
+  </div>
+</section>
+
+<!-- 5 카페 -->
+<section id="cafe">
+  <h2><span class="n">5</span>카페 · 베이커리</h2>
+  <p class="lead">인테리어와 분위기 기준으로 골랐습니다. 어차피 커피 맛은 다 좋은 동네예요.</p>
+
+  <h3>샌프란시스코</h3>
+  <div class="tbl-scroll">
+  <table>
+    <tr><th>이름</th><th>동네</th><th>왜 가나</th></tr>
+    <tr><td><b>Ritual Coffee Roasters</b></td><td>Hayes Valley (Patricia's Green 앞)</td><td>SF 3세대 커피의 상징. 공원 앞 위치라 헤이즈밸리 쇼핑 중간에 딱</td></tr>
+    <tr><td><b>Blue Bottle 원조 키오스크</b></td><td>Hayes Valley</td><td>블루보틀이 시작된 그 창고 골목 키오스크. 성지순례 성격</td></tr>
+    <tr><td><b>Miette</b></td><td>Hayes Valley / Ferry Building</td><td>파스텔 톤 인테리어의 디저트숍. 사진용으로 제일 예쁩니다</td></tr>
+    <tr><td><b>Sightglass Coffee</b></td><td>SoMa</td><td>높은 천장의 창고형 로스터리. 공간 자체가 볼거리</td></tr>
+    <tr><td><b>Saint Frank Coffee</b></td><td>Russian Hill</td><td>화이트 우드 미니멀 인테리어. 조용하고 깔끔</td></tr>
+    <tr><td><b>Wrecking Ball Coffee</b></td><td>2271 Union St</td><td>Union St 쇼핑 중간에. 공간이 예쁩니다</td></tr>
+    <tr><td><b>Jane</b></td><td>2123 Fillmore St / 925 Larkin St</td><td>베이커리 카페. 브런치와 페이스트리가 좋고 인테리어도 감각적</td></tr>
+    <tr><td><b>Andytown Coffee</b></td><td>Outer Sunset 외</td><td>스노위 플레인(에스프레소 소다)이 시그니처</td></tr>
+    <tr><td><b>Four Barrel Coffee</b></td><td>375 Valencia St</td><td>미션 쇼핑 코스 중간. 목재 인테리어의 대형 로스터리</td></tr>
+    <tr><td><b>Kissaten HiFi · Kissakeko</b></td><td>SF</td><td><b>2026년 지금 가장 핫한 형식</b> — LP 듣는 킷사텐형 카페. 말차·바나나 라떼. 20~30대 취향 직격</td></tr>
+    <tr><td><b>Tartine Bakery</b></td><td>600 Guerrero St, Mission</td><td>SF 베이커리의 대명사. 줄은 각오하세요</td></tr>
+    <tr><td><b>b. patisserie / Arsicault</b></td><td>Lower Pac Heights / Richmond</td><td>크루아상 양대산맥. 아침 일찍</td></tr>
+  </table>
+  </div>
+
+  <h3>실리콘밸리 (숙소 근처)</h3>
+  <div class="tbl-scroll">
+  <table>
+    <tr><th>이름</th><th>위치</th><th>왜 가나</th></tr>
+    <tr><td><b>Voyager Craft Coffee</b></td><td>3985 Stevens Creek Blvd, Santa Clara</td><td>컬러 타일 인테리어. <b>사우스베이 감성카페 1순위</b>로 자주 꼽힙니다. 밸리페어·산타나로 가는 길에</td></tr>
+    <tr><td><b>Chromatic Coffee</b></td><td>Santa Clara / San Jose</td><td>디자인 좋은 로스터리 카페</td></tr>
+    <tr><td><b>Coupa Cafe</b></td><td>538 Ramona St, Palo Alto</td><td>베네수엘라풍 카페. 스탠퍼드·팔로알토 코스 중간에 자연스럽게</td></tr>
+    <tr><td><b>Verve Coffee Roasters</b></td><td>팔로알토 외 다수</td><td>넓고 밝은 인더스트리얼 인테리어</td></tr>
+    <tr><td><b>Dr.ink</b></td><td>San Jose</td><td>미니멀 콘크리트 인테리어</td></tr>
+    <tr><td><b>K Cafe Patisserie &amp; Tea House</b></td><td>San Jose</td><td>핑크·골드·플로럴 맥시멀 인테리어. 사진 목적이면 여기</td></tr>
+    <tr><td><b>Nirvana Soul</b></td><td>Downtown San Jose</td><td>핑크 천장 + 복층 좌석. 산호세 다운타운 코스에 딱</td></tr>
+    <tr><td><b>Philz Coffee</b></td><td>마운틴뷰·팔로알토 등</td><td>베이 에어리어 토종 체인. <b>민트 모히토 커피</b>가 시그니처</td></tr>
+    <tr><td><b>Sulbing / 한국 베이커리</b></td><td>Santa Clara · Sunnyvale 일대</td><td>설빙(팥빙수) 산타클라라점 확인. 이 지역이 한인 베이커리·디저트 밀집 지역입니다</td></tr>
+  </table>
+  </div>
+</section>
+
+<!-- 6 구글 -->
+<section id="google">
+  <h2><span class="n">6</span>구글 본사 방문 가이드</h2>
+  <p class="lead">형이 인턴이라 <b>일반 관광객은 절대 못 하는 걸</b> 할 수 있습니다. 이건 이번 여행에서 가장 특별한 하루가 될 가능성이 높습니다.</p>
+
+  <div class="grid wide">
+    <div class="card feature">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Google_Campus,_Mountain_View,_CA.jpg?width=1200" alt="Googleplex" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t tech">테크</span><span class="t car">숙소 차 7분</span></div>
+        <h4>Googleplex · 마운틴뷰 캠퍼스</h4>
+        <p>구글 캠퍼스는 <b>기본적으로 직원 전용</b>이라 일반인은 건물 안에 못 들어갑니다. 형의 게스트로 들어가면 볼 수 있는 것들이 이런 것들입니다.</p>
+        <dl>
+          <dt>캠퍼스</dt><dd>컬러풀한 구글 자전거, 야외 잔디밭, 조형물, 안드로이드 버전별 조각상(위치가 바뀌었을 수 있으니 형에게 확인)</dd>
+          <dt>Bay View</dt><dd>2022년에 연 신사옥. <b>물결치는 태양광 지붕(드래건스케일)</b>이 압도적입니다. 건축 좋아하시면 여기가 메인</dd>
+          <dt>카페</dt><dd>구글의 상징인 무료 사내 카페. 직원 동반 게스트 정책이 있으니 <b>형이 미리 확인</b>해야 합니다</dd>
+          <dt>굿즈</dt><dd>사내 구글 스토어 외에, 일반 개방된 <b>Google Visitor Experience</b>(2000 N Shoreline)에도 스토어가 있습니다</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="bd">
+        <div class="tags"><span class="t free">무료</span><span class="t shop">굿즈</span></div>
+        <h4><a href="https://visit.withgoogle.com/plan-your-visit/" target="_blank">Google Visitor Experience</a></h4>
+        <p class="en">2000 N Shoreline Blvd, Mountain View</p>
+        <p>구글이 만든 <b>일반 공개</b> 공간. 배지 없이 누구나 들어갑니다. 구글 스토어(굿즈·하드웨어), 카페, 야외 플라자, 전시. 부모님과 편하게 가기 좋고 <b>컴퓨터역사박물관과 도보 거리</b>입니다.</p>
+        <dl><dt>운영</dt><dd>월–토 9–19시 / 일 10–18시 · 무료 · 예약 불필요</dd></dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="bd">
+        <div class="tags"><span class="t book">형에게 미리 확인</span></div>
+        <h4>방문 전 체크리스트</h4>
+        <p>형이 미리 확인해두면 좋은 것들입니다.</p>
+        <dl>
+          <dt>게스트 등록</dt><dd>사전 등록이 필요한지, 하루 몇 명까지 되는지</dd>
+          <dt>동반 규칙</dt><dd>게스트는 직원과 항상 함께 다녀야 하는지</dd>
+          <dt>식사</dt><dd>카페 게스트 이용 가능 여부와 요일 제한</dd>
+          <dt>촬영</dt><dd>실내 촬영 제한 구역 — 이건 반드시 지켜야 합니다</dd>
+          <dt>요일</dt><dd>구글은 <b>화·수·목에 출근 인원이 가장 많습니다.</b> 금요일은 캠퍼스가 한산해서 분위기가 덜합니다</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 테크 -->
+<section id="tech">
+  <h2><span class="n">7</span>테크 성지 &amp; Waymo</h2>
+  <p class="lead">두 분이 IT 하시니 이 섹션은 알차게 넣었습니다. 사옥 대부분은 내부 출입이 안 되므로 <b>실제로 들어갈 수 있는 곳</b> 위주입니다.</p>
+  <div class="grid wide">
+
+    <div class="card feature">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Waymo_robotaxis,_San_Francisco_3.jpg?width=1200" alt="Waymo robotaxi" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t pick">꼭 해보세요</span><span class="t tech">자율주행</span></div>
+        <h4>Waymo 로보택시 타보기</h4>
+        <p>2026년 현재 <b>대기자 명단 없이 누구나</b> 탈 수 있습니다. 샌프란시스코 전역, 그리고 <b>마운틴뷰·팔로알토·로스알토스를 포함한 페닌슐라 전역</b>이 서비스 지역입니다. 운전석에 사람이 없는 차가 핸들을 스스로 돌리는 걸 보는 건, 영상으로 백 번 보는 것과 완전히 다릅니다.</p>
+        <dl>
+          <dt>방법</dt><dd>Waymo One 앱 다운로드 → 계정 생성 → 호출. 세팅 2분</dd>
+          <dt>요금</dt><dd>우버보다 대략 10~30% 비쌉니다. 팁은 없습니다</dd>
+          <dt>추천</dt><dd>첫 경험은 <b>SF 시내에서 짧게</b>. 언덕과 복잡한 교차로를 처리하는 걸 보는 게 재밌습니다</dd>
+          <dt>공항</dt><dd>SFO는 2026년 1월부터, SJC는 2025년 11월부터 승하차 가능</dd>
+          <dt>산호세</dt><dd>다운타운 중심부는 아직 서비스 밖입니다. <b>Diridon역 주변은 됩니다</b></dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Computer_History_Museum,_Mountain_View,_California-1.jpg?width=800" alt="Computer History Museum" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t pick">필수</span><span class="t car">숙소 차 7분</span></div>
+        <h4><a href="https://computerhistory.org/" target="_blank">컴퓨터 역사 박물관</a></h4>
+        <p class="en">1401 N Shoreline Blvd, Mountain View</p>
+        <p>세계 최대 컴퓨팅 역사 컬렉션. 에니악, 크레이 슈퍼컴퓨터, 애플 I, 구글 첫 서버, 자율주행차까지 한 흐름으로 이어집니다. 복원된 <b>배비지 차분기관 실연</b>은 시간 맞춰 보세요.</p>
+        <dl><dt>운영</dt><dd>수–일 10–17시 · <b>월·화 휴관</b></dd><dt>소요</dt><dd>2–3시간</dd></dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Apple_Park_-_Visitor_Center_-_Side_view_-_November_2017.jpg?width=800" alt="Apple Park Visitor Center" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t free">무료</span><span class="t shop">한정굿즈</span></div>
+        <h4><a href="https://www.apple.com/retail/appleparkvisitorcenter/" target="_blank">Apple Park Visitor Center</a></h4>
+        <p class="en">10600 N Tantau Ave, Cupertino</p>
+        <p>포스터 앤 파트너스 설계. 탄소섬유 지붕과 통유리. <b>루프탑 테라스</b>에서 원형 사옥이 보입니다. 2026년 WWDC 기념 <b>무지개 로고 후드·모자·물병</b> 등 여기서만 파는 굿즈가 목적입니다.</p>
+        <dl><dt>운영</dt><dd>월–토 10–19시 / 일 11–18시</dd><dt>주의</dt><dd>AR 전시공간은 임시 휴관 중</dd></dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Intel_HQ,_2250_Mission_College_Blvd.JPG?width=800" alt="Intel HQ" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t free">무료</span></div>
+        <h4><a href="https://www.intel.com/content/www/us/en/history/museum-visiting-intel.html" target="_blank">Intel Museum</a></h4>
+        <p class="en">2200 Mission College Blvd, Santa Clara</p>
+        <p>모래에서 칩까지의 공정, 무어의 법칙, 클린룸 방진복 체험. <b>입장·주차 무료.</b> 1시간이면 충분합니다.</p>
+        <dl><dt>운영</dt><dd>월–금 9–17시 · <b>주말 휴관</b></dd></dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/HP_garage_front.JPG?width=800" alt="HP Garage" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t free">5분 코스</span></div>
+        <h4>HP 개러지</h4>
+        <p class="en">367 Addison Ave, Palo Alto</p>
+        <p>1939년 휴렛과 패커드가 시작한 차고. <b>"실리콘밸리의 발상지"</b> 캘리포니아 사적 976호. 사유지라 인도에서 사진만. 팔로알토 일정에 5분 끼워넣으세요.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/NVIDIA_Headquarters.jpg?width=800" alt="NVIDIA HQ" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t car">외관만</span></div>
+        <h4>NVIDIA · Meta 사옥</h4>
+        <p><b>NVIDIA</b>(Santa Clara) — 삼각형 지붕의 Endeavor·Voyager. 일반 투어 없음, 도로에서 외관만. <b>Meta</b>(1 Hacker Way, Menlo Park) — 엄지척 간판 앞 인증샷이 전부입니다. 둘 다 <b>지나가는 길이면</b> 들르세요.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="bd">
+        <div class="tags"><span class="t pick">숨은 명소</span></div>
+        <h4>The Interval at Long Now</h4>
+        <p class="en">Fort Mason, San Francisco</p>
+        <p><b>1만 년 동안 작동하는 시계</b>를 만드는 Long Now 재단이 운영하는 바 겸 서재. 벽 전체가 "문명을 재건하는 데 필요한 책 3,500권"으로 채워져 있습니다. 커피도 칵테일도 됩니다. <b>이번 여행에서 가장 두 분 취향일 곳</b>일지도 모릅니다.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="bd">
+        <div class="tags"><span class="t free">무료 입장</span></div>
+        <h4>Musée Mécanique</h4>
+        <p class="en">Pier 45, Fisherman's Wharf</p>
+        <p>100년 넘은 동전식 기계 게임 300여 대가 실제로 작동하는 박물관. <b>입장 무료</b>, 동전 넣고 직접 돌려보는 방식. 피셔맨스워프 관광지 중 유일하게 "관광지 같지 않은" 곳입니다.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 8 SF 명소 -->
+<section id="sf">
+  <h2><span class="n">8</span>샌프란시스코 명소</h2>
+  <p class="lead">쇼핑·카페 위주로 짜긴 했지만, 그래도 이 정도는 봐야 SF에 다녀온 게 됩니다.</p>
+  <div class="grid wide">
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Gate_Bridge_and_San_Francisco_skyline_from_Hawk_Hill_at_Blue_Hour_dllu.jpg?width=800" alt="Golden Gate Bridge" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t pick">필수</span><span class="t free">무료</span></div>
+        <h4>금문교</h4>
+        <p>전망 포인트별로 성격이 다릅니다. <b>Crissy Field</b> — 평지·잔디·주차 편함, 부모님과 다니기 최적. <b>Fort Point</b> — 다리 바로 아래, 웅장함. <b>Battery Spencer</b>(마린 쪽) — 사진은 최고인데 주차가 극악입니다.</p>
+        <dl><dt>통행료</dt><dd>남행(마린→SF)만 부과 · $10.25 FasTrak / $10.50 번호판</dd></dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Alcatraz_Island_from_San_Francisco_Bay.jpg?width=800" alt="Alcatraz" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t book">예약 필수</span></div>
+        <h4><a href="https://alcatrazcitycruises.com/" target="_blank">알카트라즈 섬</a></h4>
+        <p class="en">Pier 33 출발 · Alcatraz City Cruises가 유일한 공식 운영사</p>
+        <p>실제 수감자·교도관 증언으로 만든 <b>한국어 오디오가이드</b>가 압권입니다. 페리에서 보는 스카이라인도 좋습니다.</p>
+        <dl>
+          <dt>요금</dt><dd>주간 성인 $47.95 / 야간 성인 $59.65</dd>
+          <dt>추천</dt><dd>성인만 넷이면 <b>야간 투어</b>가 사람 적고 분위기 훨씬 좋습니다</dd>
+          <dt>예약</dt><dd><b>90일 전 오픈 · 2~4주 전 매진</b></dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/San_Francisco_Cable_Car_No._57_on_California_Street-6669.jpg?width=800" alt="Cable Car" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t pick">필수</span></div>
+        <h4>케이블카</h4>
+        <p>1873년부터 운행 중인 세계 유일의 수동식 케이블카. <b>Powell–Hyde 라인</b>이 롬바드 스트리트와 기라델리를 지나 경치가 제일 좋습니다.</p>
+        <dl><dt>요금</dt><dd>편도 $9 (환승 불가)</dd><dt>팁</dt><dd>종점은 줄이 1시간. <b>중간 정류장에서 타세요</b></dd><dt>덤</dt><dd>Cable Car Museum(1201 Mason St)은 무료 — 실제 구동 기계실을 봅니다</dd></dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Palace_of_Fine_Arts_SF_CA.jpg?width=800" alt="Palace of Fine Arts" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t free">무료</span></div>
+        <h4>Palace of Fine Arts</h4>
+        <p>1915년 만국박람회 때 지은 로마 신전풍 로툰다와 백조 연못. <b>15~20분이면 충분하고 사진은 확실히 남습니다.</b> 금문교 코스 중간에 자연스럽게 넣기 좋습니다.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Painted_Ladies,_Alamo_Square.jpg?width=800" alt="Painted Ladies" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t free">무료</span></div>
+        <h4>Painted Ladies (Alamo Square)</h4>
+        <p>빅토리안 주택 6채와 도심 스카이라인이 한 프레임에 들어오는 언덕. 헤이즈밸리에서 걸어갈 만한 거리라 <b>같은 날 묶으면 좋습니다.</b> 노을 무렵이 제일 예쁩니다.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lombard_Street,_San_Francisco,_2022_1.jpg?width=800" alt="Lombard Street" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t free">무료</span></div>
+        <h4>롬바드 스트리트 &amp; 트윈픽스</h4>
+        <p><b>롬바드</b> — 여덟 번 꺾이는 꽃길 언덕. 차로 내려가는 건 대기줄이 기니 케이블카에서 보거나 걸어서 보세요. <b>트윈픽스</b> — 시내 전경 최고지만 안개·강풍이 잦고 <b>차량털이 다발 구역</b>이라 오래 세워두지 마세요.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/2017_SFMOMA_from_Yerba_Buena_Gardens.jpg?width=800" alt="SFMOMA" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t book">9/14–16 휴관</span></div>
+        <h4><a href="https://www.sfmoma.org/visit/" target="_blank">SFMOMA</a></h4>
+        <p class="en">151 Third St</p>
+        <p>서부 최대 현대미술관. 7층 규모, 옥상 조각정원과 리빙월. 건축 자체가 볼거리입니다.</p>
+        <dl>
+          <dt>운영</dt><dd>월·화 10–17 / <b>수 휴관</b> / 목 12–20 / 금–일 10–17</dd>
+          <dt>요금</dt><dd>성인 $30 · 시니어(65+) $25</dd>
+          <dt>추천</dt><dd><b>목요일 야간개장</b>이 가장 한산합니다</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/DeYoung_Museum.JPG?width=800" alt="de Young Museum" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t book">월 휴관</span></div>
+        <h4><a href="https://www.famsf.org/visit/de-young-tickets-hours" target="_blank">de Young Museum</a></h4>
+        <p>골든게이트파크 안. 구리 외벽 건축이 명물이고 <b>전망타워는 무료</b>입니다. 자매관 Legion of Honor에서 9/5부터 <b>'Eternal Paris' 사진전</b> 진행 중.</p>
+        <dl><dt>운영</dt><dd>화–일 9:30–17:15 · <b>월 휴관</b></dd><dt>요금</dt><dd>성인 $25 · 시니어 $22 · <b>16:30 이후 상설전 무료</b></dd></dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Dragon_Gate,_Chinatown,_SF_front.JPG?width=800" alt="Chinatown" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t free">무료</span></div>
+        <h4>차이나타운 &amp; 노스비치</h4>
+        <p>북미 최대·최고령 차이나타운. Dragon Gate에서 Grant Ave를 따라 올라가세요. 좁은 골목의 <b>Golden Gate Fortune Cookie Factory</b>는 5분짜리지만 재밌습니다. 붙어 있는 노스비치는 이탈리아 이민자 동네로 카페와 Coit Tower.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 9 자연 -->
+<section id="nature">
+  <h2><span class="n">9</span>자연 — 이 정도만</h2>
+  <p class="lead">자연 비중을 줄이셨으니 <b>진짜 유명한 것만</b> 남겼습니다. 나머지는 이동 중에 창밖으로 보는 걸로 충분합니다.</p>
+  <div class="grid wide">
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Family_ring_of_redwoods.jpg?width=800" alt="Muir Woods" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t pick">하나만 고른다면</span><span class="t book">예약 필수</span></div>
+        <h4><a href="https://gomuirwoods.com/" target="_blank">Muir Woods</a></h4>
+        <p>수령 1000년, 높이 80m 레드우드 숲. 이건 사진으로 대체가 안 되는 종류의 경험입니다. <b>평평한 나무 데크길</b>이라 부모님도 편합니다. 1~1.5시간이면 충분.</p>
+        <dl>
+          <dt>예약</dt><dd><b>주차 또는 셔틀 예약 없이는 진입 불가</b></dd>
+          <dt>비용</dt><dd>주차 $10 + 입장료 1인 $15</dd>
+          <dt>묶기</dt><dd>돌아오는 길에 <b>소살리토</b> 들러 점심 → SF로 넘어오는 코스</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/View_of_the_coastal_cliffs_in_Half_Moon_Bay,_California.jpg?width=800" alt="Half Moon Bay" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t car">반나절</span></div>
+        <h4>하프문베이 &amp; 1번 국도</h4>
+        <p>숙소에서 45분. Hwy 92로 산 하나 넘으면 바로 태평양입니다. 절벽 산책로 30분 + <b>바다 앞 랍스터롤 점심</b>이면 반나절로 딱 떨어집니다. 등산 없이 바다만 보고 오는 코스라 부담이 없습니다.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/The_Lone_Cypress.jpg?width=800" alt="Lone Cypress 17-Mile Drive" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t car">LA 가는 길</span></div>
+        <h4>몬터레이 · 17-Mile Drive · 카멜</h4>
+        <p>따로 하루를 빼기보다 <b>9/18 LA 이동일에 경유</b>하는 게 효율적입니다. 몬터레이베이 수족관(성인 $65)은 세계 3대로 꼽히고, 17-Mile Drive는 차 안에서 다 보는 코스라 편합니다(통행료 $12.50).</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Shoreline_Park_boathouse_and_boats.jpg?width=800" alt="Shoreline Park" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t walk">숙소 근처</span><span class="t free">무료</span></div>
+        <h4>Shoreline Park (마운틴뷰)</h4>
+        <p>구글 캠퍼스 옆 습지 공원. 굳이 걷지 않아도 됩니다. <b>노을 시간에 주차장에서 10분 서 있다 오는 것만으로도</b> 충분히 예쁩니다. 컴퓨터역사박물관에서 차로 3분.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 10 운전 -->
+<section id="drive">
+  <h2><span class="n">10</span>SF 자차 이동 — 운전 &amp; 주차</h2>
+  <p class="lead">SF를 차로 가시니 이 섹션이 실전에서 제일 중요합니다.</p>
+
+  <h3>루트 — 101 vs 280</h3>
+  <div class="tbl-scroll">
+  <table>
+    <tr><th>루트</th><th>특징</th><th>추천 상황</th></tr>
+    <tr><td><b>I-280</b></td><td>"세계에서 가장 아름다운 고속도로"라 불립니다. 크리스탈 스프링스 저수지와 산을 끼고 달리고, 트럭이 적습니다. SF <b>서쪽</b>(골든게이트파크·트윈픽스 방향)으로 진입</td><td><b>기본 추천.</b> 특히 금문교·헤이즈밸리·골든게이트파크 가는 날</td></tr>
+    <tr><td><b>US-101</b></td><td>직선 최단 루트. 대신 정체가 심하고 풍경은 상업지구·산업지구. SF <b>동쪽</b>(SoMa·다운타운) 진입</td><td>한산한 시간대에 다운타운·페리빌딩 갈 때</td></tr>
+  </table>
+  </div>
+  <div class="alert"><b>피해야 할 시간대</b> — 평일 북행 7:00–9:30 / 평일 남행 16:00–19:00. 이 시간엔 편도 50분 거리가 <b>90분 이상</b>으로 늘어납니다. 주말은 대체로 한산합니다.</div>
+
+  <h3>주차장 — 목적지별</h3>
+  <div class="tbl-scroll">
+  <table>
+    <tr><th>가는 곳</th><th>추천 주차장</th><th>요금 (2026)</th></tr>
+    <tr><td><b>유니언스퀘어 · 다운타운</b></td><td>Sutter-Stockton Garage (444 Stockton St) · 24시간 운영, 시영</td><td>시간당 $5–6 · <b>12시간 최대 $40</b> · 24시간 $46</td></tr>
+    <tr><td><b>유니언스퀘어 (짧게)</b></td><td>Union Square Garage (333 Post St) · 5–23시</td><td>동일 · <b>평일 9:30 전 입차 시 얼리버드 $20</b></td></tr>
+    <tr><td><b>피셔맨스워프 · 알카트라즈</b></td><td>PIER 39 Garage · 24시간, Beach St 진입</td><td>시간당 약 $10 · 식당 이용 시 1시간 무료</td></tr>
+    <tr><td><b>골든게이트파크 · 드영</b></td><td>Music Concourse Garage (7–19시)</td><td>평일 $5~ · <b>1일 최대 $35</b> · 주변 무료 노상주차도 있음</td></tr>
+    <tr><td><b>헤이즈밸리 · 시빅센터</b></td><td>Performing Arts Garage (360 Grove St) · Civic Center Garage (355 McAllister St)</td><td>시영 표준 요금대 (요금 재확인 권장)</td></tr>
+    <tr><td><b>페리빌딩 · 임바카데로</b></td><td>Embarcadero Center 주차장들 (민영)</td><td>요금 확인 필요 · SpotHero 예약 권장</td></tr>
+    <tr><td><b>미션 · 발렌시아</b></td><td>시영 주차장 없음 — 노상 미터 또는 민영 소형 주차장</td><td>여기는 주차가 제일 어렵습니다</td></tr>
+  </table>
+  </div>
+
+  <div class="tip">
+    <b>핵심 전략 — "하루에 한 번만 주차한다".</b> SF에서 차를 계속 옮기면 하루의 절반이 주차 찾기로 사라집니다. <b>아침에 좋은 위치의 주차장에 넣고, 그날은 걷기 + 케이블카 + Waymo/우버로 움직이세요.</b> 주차비 $40이 훨씬 남는 장사입니다.
+  </div>
+
+  <h3>노상 주차 · 연석 색깔</h3>
+  <p style="font-size:13.6px;color:var(--ink2)">미터는 대부분 <b>월–토 9–18시 단속</b>입니다. 일요일은 대부분 무료지만 <b>피셔맨스워프·임바카데로는 일요일에도 유료</b>이니 주의하세요. 결제 앱은 SF에서 <b>HotSpot</b>과 <b>ParkMobile</b>을 씁니다(미터 결제용). <b>SpotHero</b>는 주차장 사전 예약용으로 별개로 유용합니다.</p>
+  <div class="tbl-scroll">
+  <table>
+    <tr><th>연석 색</th><th>의미</th></tr>
+    <tr><td><b style="color:#dc2626">빨강</b></td><td>정차·주차 절대 금지</td></tr>
+    <tr><td><b style="color:#ca8a04">노랑</b></td><td>상업용 화물 하역 전용</td></tr>
+    <tr><td><b style="color:#16a34a">초록</b></td><td>단시간 주차 (15~30분)</td></tr>
+    <tr><td><b>흰색</b></td><td>승객 승하차만 (주차 불가)</td></tr>
+    <tr><td><b style="color:#2563eb">파랑</b></td><td>장애인 전용</td></tr>
+  </table>
+  </div>
+
+  <div class="alert">
+    <b>차량털이 — 이건 과장이 아닙니다.</b><br>
+    렌터카는 번호판만 봐도 티가 나서 표적이 됩니다. 피셔맨스워프, 트윈픽스, 골든게이트파크 주차장, 알라모스퀘어, 랜즈엔드가 특히 심합니다.<br>
+    · <b>차 안에 아무것도 보이게 두지 마세요.</b> 빈 가방, 충전 케이블도 안 됩니다.<br>
+    · 트렁크도 안전하지 않습니다. <b>주차한 뒤에 트렁크에 넣는 건 지켜보다 털립니다</b> — 출발 전에 넣으세요.<br>
+    · 장시간 세워둘 땐 <b>관리인이 있는 시영 주차장</b>(Sutter-Stockton, Union Square)을 쓰세요. Music Concourse는 무인이라 상대적으로 취약합니다.
+  </div>
+
+  <div class="tip">
+    <b>금문교 통행료 — 렌터카 수수료 함정.</b><br>
+    통행료 자체는 <b>남행(마린→SF)만 $10.50</b>입니다. 문제는 렌터카 회사의 톨 프로그램인데, 실제로 다리를 건넌 날만이 아니라 <b>렌트 전 기간에 하루 $5~6씩</b> 수수료를 붙입니다. 8일이면 $40~48이 통행료 $10.50에 얹히는 셈입니다.<br>
+    <b>해결책 —</b> 픽업할 때 톨 프로그램을 거절하고, 다리를 건넌 뒤 <b>48시간 안에 bayareafastrak.org/paytoll에서 번호판으로 직접 결제</b>하세요. 마린 쪽(뮤어우즈·소살리토)에 안 가시면 애초에 통행료가 발생하지 않습니다.
+  </div>
+
+  <h3>차를 가져가면 안 되는 곳</h3>
+  <p style="font-size:13.6px;color:var(--ink2)"><b>롬바드 스트리트 · 러시안힐 · 놉힐 · 차이나타운 · 노스비치.</b> 급경사에 일방통행이 얽혀 있고 주차가 사실상 불가능합니다. 이 구역들은 <b>케이블카나 도보</b>로 접근하는 게 정답입니다.</p>
+</section>
+
+<!-- 11 대중교통 -->
+<section id="transit">
+  <h2><span class="n">11</span>대중교통 — 팔로알토 &amp; 산호세</h2>
+  <p class="lead">차가 없는 날, 또는 주차하기 싫은 날 쓰는 루트입니다. 이 두 방향은 대중교통이 실제로 쓸 만합니다.</p>
+
+  <div class="grid wide" style="margin-bottom:24px">
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Clipper_card.png?width=800" alt="Clipper card" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t pick">도착 첫날 세팅</span></div>
+        <h4>Clipper 카드 — 먼저 이것부터</h4>
+        <p>실물 카드 필요 없습니다. <b>애플 월렛에서 "+" → 교통카드 → Clipper</b> 선택하고 금액을 충전하면 몇 초 만에 끝납니다. 구글 월렛도 지원합니다.</p>
+        <dl>
+          <dt>사용처</dt><dd><b>Caltrain · VTA · Muni · BART · 골든게이트 페리</b> 전부</dd>
+          <dt>혜택</dt><dd>Caltrain 편도 55센트 할인 · VTA는 2시간 무료 환승 + <b>하루 요금 자동 상한(데이패스 가격 이상 안 나감)</b></dd>
+          <dt>대안</dt><dd>2025년 12월부터 <b>비접촉 신용카드 직접 태그</b>도 됩니다. 다만 할인·환승 혜택은 없습니다</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="card">
+      <img class="ph" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mountain_View_Station.jpg?width=800" alt="Mountain View Station" loading="lazy">
+      <div class="bd">
+        <div class="tags"><span class="t transit">기점</span></div>
+        <h4>Mountain View Transit Center</h4>
+        <p>숙소에서 걸어갈 만한 거리이고, 여기 하나에 <b>Caltrain + VTA 라이트레일 오렌지라인 + VTA 버스</b>가 다 모입니다. 이 역이 이번 여행 대중교통의 허브입니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>① 팔로알토 · 스탠퍼드 가는 법</h3>
+  <div class="tbl-scroll">
+  <table>
+    <tr><th>구간</th><th>방법</th><th>소요</th><th>요금</th></tr>
+    <tr><td>마운틴뷰 → 팔로알토</td><td><b>Caltrain</b> 북행 1정거장</td><td>약 8분</td><td>성인 $4.00 (1존) · Clipper 55센트 할인</td></tr>
+    <tr><td>팔로알토역 → 스탠퍼드 캠퍼스</td><td><b>Marguerite 셔틀</b> (역 옆 Transit Center 승차)</td><td>10분 내외</td><td><b>무료 · 일반인 탑승 가능</b></td></tr>
+    <tr><td>팔로알토역 → University Ave</td><td>도보</td><td>2~3분</td><td>—</td></tr>
+    <tr><td>팔로알토역 → Stanford Shopping Center</td><td>도보</td><td>10~15분</td><td>—</td></tr>
+    <tr><td>팔로알토역 → 메인 쿼드</td><td>도보 (Palm Drive 직진)</td><td>20~25분</td><td>셔틀 타는 게 편합니다</td></tr>
+    <tr><td>대안 루트</td><td><b>VTA 버스 22 / Rapid 522</b> (엘 카미노 레알 축)</td><td>25~35분</td><td>$2.50 · 22번은 거의 24시간 운행</td></tr>
+  </table>
+  </div>
+  <div class="note"><b>Marguerite 셔틀은 스탠퍼드 소속이 아니어도 누구나 무료로 탑니다.</b> 캠퍼스 주차가 번거로워서, 차가 있어도 이 조합이 더 편한 경우가 많습니다. 노선이 여러 개이니 당일 <a href="https://transportation.stanford.edu/marguerite" target="_blank">공식 페이지</a>에서 메인 쿼드행 노선을 확인하세요.</div>
+
+  <h3>② 산호세 가는 법</h3>
+  <div class="tbl-scroll">
+  <table>
+    <tr><th>목적지</th><th>루트</th><th>소요</th><th>요금</th></tr>
+    <tr><td><b>산호세 다운타운</b><br>(San Pedro Square, Tech Interactive)</td><td><b>Caltrain</b> 남행 → San Jose Diridon → 도보 15~20분 <b>또는</b> VTA 그린라인 1정거장</td><td>약 25분 + 도보</td><td>Caltrain $6.25 (2존)</td></tr>
+    <tr><td><b>산타나로 · 밸리페어</b></td><td>Caltrain → Diridon → <b>Waymo/우버</b> (버스 환승은 40분+로 비효율)</td><td>약 45분~1시간</td><td>Caltrain + 차량 호출비</td></tr>
+    <tr><td>레벨스·밀피타스 방면</td><td><b>VTA 라이트레일 오렌지라인</b> (마운틴뷰역 출발)</td><td>노선 길이만큼</td><td>$2.50</td></tr>
+  </table>
+  </div>
+  <div class="alert">
+    <b>VTA 라이트레일에 대한 오해 주의.</b> 마운틴뷰역에서 출발하는 <b>오렌지라인은 산호세 다운타운으로 가지 않습니다.</b> Alum Rock(동쪽 끝)으로 갑니다. 다운타운을 지나는 건 <b>그린라인</b>인데 이건 마운틴뷰에서 출발하지 않아요. 환승하면 갈 수는 있지만 오래 걸리므로, <b>산호세 다운타운은 무조건 Caltrain</b>이 정답입니다.
+  </div>
+
+  <h3>③ 요금 정리</h3>
+  <div class="tbl-scroll">
+  <table>
+    <tr><th></th><th>Caltrain</th><th>VTA (버스·라이트레일)</th></tr>
+    <tr><td><b>1회</b></td><td>1존 $4.00 · 2존 $6.25 · 3존 $8.50 (Clipper 시 55센트 할인)</td><td>성인 $2.50 · Rapid $5.00 · 시니어(65+) $1.00</td></tr>
+    <tr><td><b>데이패스</b></td><td>1존 $8.00 ~ 3존 $17.00</td><td>성인 $7.50 · 시니어 $3.00</td></tr>
+    <tr><td><b>환승</b></td><td>—</td><td>Clipper 태그 시 <b>2시간 무료 환승</b></td></tr>
+  </table>
+  </div>
+
+  <div class="alert"><b>애플파크(쿠퍼티노)는 대중교통으로 가지 마세요.</b> 마운틴뷰에서 직행 노선이 없어서 버스를 두 번 갈아타고 1시간 이상 걸립니다. <b>차(20분) 또는 Waymo</b>가 답입니다.</div>
+</section>
+
+<!-- 12 먹거리 -->
+<section id="eat">
+  <h2><span class="n">12</span>맛집 &amp; 마트</h2>
+
+  <h3>마트 (도착 첫날)</h3>
+  <div class="tbl-scroll">
+  <table>
+    <tr><th>이름</th><th>주소</th><th>거리</th><th>용도</th></tr>
+    <tr><td><b>Trader Joe's</b></td><td>590 Showers Dr, Mountain View</td><td>차 5분</td><td>간편식·냉동식품·와인·간식. 여행 중 최고 가성비</td></tr>
+    <tr><td><b>Costco</b></td><td>1000 N Rengstorff Ave, Mountain View</td><td>차 5분</td><td>생수·과일 대용량. 한국 코스트코 카드로 입장됩니다</td></tr>
+    <tr><td><b>H Mart</b></td><td>1179 S De Anza Blvd, San Jose</td><td>차 18분</td><td>한국 식료품. 푸드코트도 있어서 부모님 식사 해결에 좋습니다</td></tr>
+    <tr><td><b>99 Ranch Market</b></td><td>10983 N Wolfe Rd, Cupertino</td><td>차 12분</td><td>아시안 식료품. 애플파크 가는 날 묶으세요</td></tr>
+    <tr><td><b>Whole Foods</b></td><td>4800 El Camino Real, Los Altos</td><td>차 8분</td><td>유기농·샐러드바</td></tr>
+  </table>
+  </div>
+
+  <h3>먹어봐야 할 것</h3>
+  <div class="grid">
+    <div class="card"><div class="bd">
+      <h4>In-N-Out Burger</h4>
+      <p>캘리포니아 아니면 못 먹습니다. 메뉴판에 없는 <b>"Animal Style"</b>로 주문하세요. 마운틴뷰·서니베일 지점.</p>
+    </div></div>
+    <div class="card"><div class="bd">
+      <h4>미션 부리토</h4>
+      <p>SF 미션 지구가 원조. <b>La Taqueria</b>, <b>El Farolito</b>. 하나가 성인 한 끼 이상입니다.</p>
+    </div></div>
+    <div class="card"><div class="bd">
+      <h4>San Pedro Square Market</h4>
+      <p>산호세 다운타운 푸드홀. 여러 벤더에서 각자 다른 걸 시켜 나눠 먹기 좋습니다.</p>
+    </div></div>
+    <div class="card"><div class="bd">
+      <h4>Hog Island Oyster (페리빌딩)</h4>
+      <p>페리빌딩 안의 굴 바. 바다 보면서 생굴과 화이트와인. 부모님 접대용으로도 좋습니다.</p>
+    </div></div>
+    <div class="card"><div class="bd">
+      <h4>산타클라라 · 서니베일 한식</h4>
+      <p>이 일대가 베이 에어리어 한인 상권입니다. 8일 중 부모님이 한식 찾으실 때 여기로.</p>
+    </div></div>
+    <div class="card"><div class="bd">
+      <h4>Castro Street (숙소 도보권)</h4>
+      <p>한식·일식·대만식·인도·독일 비어가든까지. <b>8일 저녁을 다 다르게 먹을 수 있습니다.</b></p>
+    </div></div>
+  </div>
+</section>
+
+<!-- 13 체크리스트 -->
+<section id="check">
+  <h2><span class="n">13</span>체크리스트</h2>
+
+  <h3>지금 당장</h3>
+  <ul class="chk">
+    <li class="urgent"><b>알카트라즈 예매</b> — alcatrazcitycruises.com 공식 사이트에서만. 성인 넷이면 <b>야간 투어</b>를 추천합니다</li>
+    <li><b>렌터카 예약 — 톨 프로그램은 거절하세요</b> (위 금문교 통행료 항목 참고)</li>
+    <li><b>형에게 구글 캠퍼스 게스트 정책 확인 요청</b> — 사전 등록 필요 여부, 인원, 카페 이용, 촬영 제한</li>
+    <li><b>LA행 항공권 또는 편도 렌터카</b></li>
+    <li><b>뮤어우즈 예약</b> — 가실 계획이면 (gomuirwoods.com)</li>
+  </ul>
+
+  <h3>출발 1~2주 전</h3>
+  <ul class="chk">
+    <li><b>컴퓨터역사박물관 예매</b> — 사전 예매 권장</li>
+    <li><b>휴관 재확인</b> — SFMOMA 9/14–16 휴관 유지 여부, 애플파크 전시공간 재개장 여부</li>
+    <li><b>ESTA · 국제운전면허증</b> — 운전하실 분 전원</li>
+    <li><b>Waymo One 앱 미리 설치 &amp; 계정 생성</b> — 현지에서 바로 쓰려면</li>
+    <li><b>SpotHero 앱 설치</b> — SF 주차장 사전 예약용</li>
+  </ul>
+
+  <h3>짐</h3>
+  <ul class="chk">
+    <li><b>바람막이 / 플리스 4벌</b> — SF 해안은 9월에도 15도에 강풍입니다. 이게 제일 중요합니다</li>
+    <li><b>편한 운동화</b> — SF는 언덕 도시, 하루 2만보가 기본</li>
+    <li><b>선글라스 · 선크림</b> — 실리콘밸리 햇볕이 강합니다</li>
+    <li><b>110V 어댑터 &amp; 멀티탭</b></li>
+    <li><b>여유 있는 캐리어 공간</b> — 쇼핑 위주 여행이니 오는 짐을 가볍게</li>
+    <li><b>Clipper를 폰 지갑에 미리 추가</b></li>
+  </ul>
+</section>
+
+<footer>
+  <p><b>정보 기준일 2026년 8월 14일.</b> 요금·운영시간·매장 구성은 바뀔 수 있습니다. 특히 아래는 방문 직전 확인을 권합니다.</p>
+  <p>· 산타나로/밸리페어 개별 매장 구성 · SF 민영 주차장 요금(임바카데로 센터, Anchorage Square) · 시빅센터/공연예술 주차장 요금 · 익스플로라토리움 입장료 · Caltrain 주말 배차 간격 · The Voyager Shop 영업 여부 · 구글 캠퍼스 게스트 정책 · 애플파크 전시공간 재개장</p>
+  <p style="margin-top:14px">사진 — 모두 <a href="https://commons.wikimedia.org/" target="_blank">Wikimedia Commons</a>의 자유 이용 이미지입니다.</p>
+  <p style="margin-top:10px">주요 출처 — <a href="https://computerhistory.org/hours-admission/" target="_blank">Computer History Museum</a> · <a href="https://www.apple.com/retail/appleparkvisitorcenter/" target="_blank">Apple</a> · <a href="https://alcatrazcitycruises.com/" target="_blank">Alcatraz City Cruises</a> · <a href="https://www.sfmoma.org/visit/" target="_blank">SFMOMA</a> · <a href="https://www.famsf.org/visit/de-young-tickets-hours" target="_blank">FAMSF</a> · <a href="https://www.sfmta.com/garages-lots-list" target="_blank">SFMTA 주차장</a> · <a href="https://www.sfmta.com/getting-around/drive-park/parking-meters" target="_blank">SFMTA 미터</a> · <a href="https://goldengatebridgetoll.com/rental-car" target="_blank">금문교 렌터카 통행료</a> · <a href="https://www.caltrain.com/fares" target="_blank">Caltrain</a> · <a href="https://www.vta.org/go/fares" target="_blank">VTA</a> · <a href="https://transportation.stanford.edu/marguerite" target="_blank">Stanford Marguerite</a> · <a href="https://www.clippercard.com/" target="_blank">Clipper</a> · <a href="https://waymo.com/" target="_blank">Waymo</a> · <a href="https://visit.withgoogle.com/plan-your-visit/" target="_blank">Google Visitor Experience</a> · <a href="https://www.intel.com/content/www/us/en/history/museum-visiting-intel.html" target="_blank">Intel Museum</a> · <a href="https://www.ferrybuildingmarketplace.com/" target="_blank">Ferry Building</a></p>
+</footer>
+
+<div id="fab">
+  <button id="bigtext" title="글씨 크게" aria-label="글씨 크기 전환">가</button>
+  <button id="totop" title="맨 위로" aria-label="맨 위로">↑</button>
+</div>
+</div>
+<script>
+// 이미지 로드 실패 시 자리표시자로 대체 (레이아웃 깨짐 방지)
+document.querySelectorAll('img').forEach(function(im){
+  im.addEventListener('error', function(){
+    var d = document.createElement('div');
+    d.className = im.className + ' phfallback';
+    d.textContent = im.alt || '';
+    im.replaceWith(d);
+  });
+});
+</script>
+
+<script id="placedata" type="application/json">{"cats":[{"id":"stay","label":"숙소","color":"#111111"},{"id":"shop","label":"쇼핑","color":"#db2777"},{"id":"cafe","label":"카페·베이커리","color":"#ea580c"},{"id":"tech","label":"테크","color":"#0284c7"},{"id":"sight","label":"명소","color":"#7c3aed"},{"id":"nature","label":"자연","color":"#16a34a"},{"id":"food","label":"맛집·마트","color":"#b45309"},{"id":"transit","label":"교통·주차","color":"#64748b"}],"places":[{"n":"숙소 (359 Oak St)","c":"stay","lat":37.3903,"lng":-122.0834,"d":"마운틴뷰 다운타운 도보권","g":"https://www.google.com/maps/search/?api=1&query=359%20Oak%20St%2C%20Mountain%20View%2C%20CA%2094041","a":["숙소 (359 Oak St)"]},{"n":"Castro Street","c":"shop","lat":37.3936,"lng":-122.08,"d":"숙소 도보 15~20분. 식당·바 중심의 저녁 거리","g":"https://www.google.com/maps/search/?api=1&query=Castro%20Street%2C%20Mountain%20View%2C%20CA","a":["Castro Street"]},{"n":"컴퓨터 역사 박물관","c":"tech","lat":37.4143,"lng":-122.0774,"d":"수–일 10–17시. 이번 여행 테크 하이라이트","g":"https://www.google.com/maps/search/?api=1&query=Computer%20History%20Museum%2C%20Mountain%20View","a":["컴퓨터 역사 박물관"]},{"n":"Google Visitor Experience","c":"tech","lat":37.42,"lng":-122.081,"d":"일반 개방·무료. 구글 스토어와 카페","g":"https://www.google.com/maps/search/?api=1&query=Google%20Visitor%20Experience%2C%202000%20N%20Shoreline%20Blvd%2C%20Mountain%20View","a":["Google Visitor Experience"]},{"n":"Googleplex","c":"tech","lat":37.422,"lng":-122.0841,"d":"형 배지로 게스트 입장. 캠퍼스·Bay View","g":"https://www.google.com/maps/search/?api=1&query=Googleplex%2C%201600%20Amphitheatre%20Parkway%2C%20Mountain%20View","a":["구글 캠퍼스"]},{"n":"Shoreline Park","c":"nature","lat":37.43,"lng":-122.08,"d":"노을 명소. 박물관에서 차 3분","g":"https://www.google.com/maps/search/?api=1&query=Shoreline%20Park%2C%20Mountain%20View","a":["Shoreline Park"]},{"n":"Mountain View Transit Center","c":"transit","lat":37.3944,"lng":-122.0762,"d":"Caltrain + VTA 오렌지라인 허브","g":"https://www.google.com/maps/search/?api=1&query=Mountain%20View%20Transit%20Center","a":["Caltrain 마운틴뷰 → San Jose"]},{"n":"Costco 마운틴뷰","c":"food","lat":37.4053,"lng":-122.0968,"d":"차 5분. 한국 코스트코 카드 사용 가능","g":"https://www.google.com/maps/search/?api=1&query=Costco%2C%201000%20N%20Rengstorff%20Ave%2C%20Mountain%20View","a":["Costco"]},{"n":"Trader Joe's 마운틴뷰","c":"food","lat":37.4,"lng":-122.108,"d":"차 5분. 간편식·와인 가성비 최고","g":"https://www.google.com/maps/search/?api=1&query=Trader%20Joe%27s%2C%20590%20Showers%20Dr%2C%20Mountain%20View","a":["Trader Joe"]},{"n":"Whole Foods 로스알토스","c":"food","lat":37.402,"lng":-122.113,"d":"차 8분. 유기농·샐러드바","g":"https://www.google.com/maps/search/?api=1&query=Whole%20Foods%20Market%2C%204800%20El%20Camino%20Real%2C%20Los%20Altos","a":["Whole Foods 로스알토스"]},{"n":"스탠퍼드 메인 쿼드","c":"sight","lat":37.4275,"lng":-122.1697,"d":"사암 아치와 야자수 대로. 무료","g":"https://www.google.com/maps/search/?api=1&query=Stanford%20University%20Main%20Quad","a":["메인 쿼드"]},{"n":"Stanford Memorial Church","c":"sight","lat":37.4267,"lng":-122.17,"d":"모자이크 벽화가 압권","g":"https://www.google.com/maps/search/?api=1&query=Stanford%20Memorial%20Church","a":["메모리얼 처치"]},{"n":"Cantor Arts Center + 로댕정원","c":"sight","lat":37.4322,"lng":-122.1705,"d":"입장 무료. 월·화 휴관","g":"https://www.google.com/maps/search/?api=1&query=Cantor%20Arts%20Center%2C%20Stanford","a":["Cantor Arts Center"]},{"n":"후버타워","c":"sight","lat":37.4275,"lng":-122.1663,"d":"전망대 2026.8.14~2027.1.25 휴관","g":"https://www.google.com/maps/search/?api=1&query=Hoover%20Tower%2C%20Stanford","a":["후버타워"]},{"n":"Stanford Shopping Center","c":"shop","lat":37.443,"lng":-122.172,"d":"2026년 신규 브랜드 17곳. 주차 무료","g":"https://www.google.com/maps/search/?api=1&query=Stanford%20Shopping%20Center%2C%20Palo%20Alto","a":["Stanford Shopping Center"]},{"n":"University Avenue","c":"shop","lat":37.445,"lng":-122.161,"d":"팔로알토 다운타운 상점가","g":"https://www.google.com/maps/search/?api=1&query=University%20Avenue%2C%20Palo%20Alto","a":["University Avenue"]},{"n":"Palo Alto Caltrain 역","c":"transit","lat":37.4437,"lng":-122.165,"d":"마운틴뷰에서 1정거장 8분. 마거리트 셔틀 환승","g":"https://www.google.com/maps/search/?api=1&query=Palo%20Alto%20Caltrain%20Station","a":["마운틴뷰 → 팔로알토"]},{"n":"HP 개러지","c":"tech","lat":37.4419,"lng":-122.153,"d":"실리콘밸리 발상지. 외관만 5분","g":"https://www.google.com/maps/search/?api=1&query=HP%20Garage%2C%20367%20Addison%20Ave%2C%20Palo%20Alto","a":["HP 개러지"]},{"n":"Coupa Cafe","c":"cafe","lat":37.4443,"lng":-122.1614,"d":"팔로알토 터줏대감 카페","g":"https://www.google.com/maps/search/?api=1&query=Coupa%20Cafe%2C%20538%20Ramona%20St%2C%20Palo%20Alto","a":["Coupa Cafe"]},{"n":"Meta HQ 사인","c":"tech","lat":37.485,"lng":-122.148,"d":"엄지척 간판 인증샷. 캠퍼스 진입 불가","g":"https://www.google.com/maps/search/?api=1&query=Meta%20Headquarters%2C%201%20Hacker%20Way%2C%20Menlo%20Park","a":["Meta HQ 사인"]},{"n":"Apple Park Visitor Center","c":"tech","lat":37.3327,"lng":-122.0055,"d":"무료. 루프탑에서 우주선 사옥 조망","g":"https://www.google.com/maps/search/?api=1&query=Apple%20Park%20Visitor%20Center%2C%20Cupertino","a":["Apple Park Visitor Center"]},{"n":"Apple Park","c":"tech","lat":37.3349,"lng":-122.009,"d":"우주선 사옥. 외부에서만","g":"https://www.google.com/maps/search/?api=1&query=Apple%20Park%2C%20Cupertino","a":["Apple Park"]},{"n":"Daiso 쿠퍼티노","c":"shop","lat":37.323,"lng":-122.014,"d":"소품 쇼핑 워밍업","g":"https://www.google.com/maps/search/?api=1&query=Daiso%2C%2019750%20Stevens%20Creek%20Blvd%2C%20Cupertino","a":["Daiso 쿠퍼티노"]},{"n":"99 Ranch Market","c":"food","lat":37.3335,"lng":-122.0145,"d":"아시안 식료품. 애플파크 가는 날 묶기","g":"https://www.google.com/maps/search/?api=1&query=99%20Ranch%20Market%2C%2010983%20N%20Wolfe%20Rd%2C%20Cupertino","a":["99 Ranch Market"]},{"n":"Intel Museum","c":"tech","lat":37.388,"lng":-121.963,"d":"월–금만·무료. 1시간이면 충분","g":"https://www.google.com/maps/search/?api=1&query=Intel%20Museum%2C%20Santa%20Clara","a":["Intel Museum"]},{"n":"NVIDIA 사옥","c":"tech","lat":37.371,"lng":-121.966,"d":"외관만. 지나가는 길이면","g":"https://www.google.com/maps/search/?api=1&query=NVIDIA%20Headquarters%2C%20Santa%20Clara","a":["NVIDIA 사옥"]},{"n":"Voyager Craft Coffee","c":"cafe","lat":37.323,"lng":-121.975,"d":"컬러 타일 인테리어. 사우스베이 감성카페 1순위","g":"https://www.google.com/maps/search/?api=1&query=Voyager%20Craft%20Coffee%2C%203985%20Stevens%20Creek%20Blvd%2C%20Santa%20Clara","a":["Voyager Craft Coffee"]},{"n":"California's Great America","c":"sight","lat":37.398,"lng":-121.974,"d":"9월엔 주말만 운영","g":"https://www.google.com/maps/search/?api=1&query=California%27s%20Great%20America%2C%20Santa%20Clara","a":["California's Great America"]},{"n":"Santana Row ★","c":"shop","lat":37.321,"lng":-121.948,"d":"이번 여행 쇼핑 본진. 해질녘부터가 진짜","g":"https://www.google.com/maps/search/?api=1&query=Santana%20Row%2C%20San%20Jose","a":["Santana Row"]},{"n":"Westfield Valley Fair","c":"shop","lat":37.325,"lng":-121.946,"d":"산타나로 길 건너. 베이 최대 실내몰","g":"https://www.google.com/maps/search/?api=1&query=Westfield%20Valley%20Fair%2C%20Santa%20Clara","a":["Westfield Valley Fair"]},{"n":"The Tech Interactive","c":"tech","lat":37.3312,"lng":-121.8905,"d":"성인 $38, IMAX 포함","g":"https://www.google.com/maps/search/?api=1&query=The%20Tech%20Interactive%2C%20San%20Jose","a":["The Tech Interactive"]},{"n":"San Pedro Square Market","c":"food","lat":37.337,"lng":-121.894,"d":"다운타운 푸드홀","g":"https://www.google.com/maps/search/?api=1&query=San%20Pedro%20Square%20Market%2C%20San%20Jose","a":["San Pedro Square"]},{"n":"San Jose Diridon 역","c":"transit","lat":37.3297,"lng":-121.9028,"d":"Caltrain 25분. 다운타운까지 도보 15~20분","g":"https://www.google.com/maps/search/?api=1&query=San%20Jose%20Diridon%20Station","a":["San Jose Diridon"]},{"n":"Winchester Mystery House","c":"sight","lat":37.3184,"lng":-121.951,"d":"160개 방짜리 기괴한 저택","g":"https://www.google.com/maps/search/?api=1&query=Winchester%20Mystery%20House%2C%20San%20Jose","a":["Winchester Mystery House"]},{"n":"Nirvana Soul","c":"cafe","lat":37.334,"lng":-121.889,"d":"핑크 천장 + 복층. 다운타운 카페","g":"https://www.google.com/maps/search/?api=1&query=Nirvana%20Soul%2C%20San%20Jose","a":["Nirvana Soul"]},{"n":"H Mart 산호세","c":"food","lat":37.311,"lng":-122.033,"d":"한국 식료품 + 푸드코트","g":"https://www.google.com/maps/search/?api=1&query=H%20Mart%2C%201179%20S%20De%20Anza%20Blvd%2C%20San%20Jose","a":["H Mart 산호세"]},{"n":"Downtown Los Gatos","c":"shop","lat":37.227,"lng":-121.982,"d":"산기슭 부촌의 예쁜 다운타운","g":"https://www.google.com/maps/search/?api=1&query=Downtown%20Los%20Gatos%2C%20CA","a":["Downtown Los Gatos"]},{"n":"SF Premium Outlets","c":"shop","lat":37.703,"lng":-121.735,"d":"아울렛 하나만 간다면 여기","g":"https://www.google.com/maps/search/?api=1&query=San%20Francisco%20Premium%20Outlets%2C%20Livermore","a":["SF Premium Outlets"]},{"n":"금문교","c":"sight","lat":37.8199,"lng":-122.4783,"d":"남행만 통행료 $10.50","g":"https://www.google.com/maps/search/?api=1&query=Golden%20Gate%20Bridge","a":["금문교"]},{"n":"Crissy Field","c":"sight","lat":37.804,"lng":-122.465,"d":"평지·잔디·주차 편함. 최고의 금문교 뷰포인트","g":"https://www.google.com/maps/search/?api=1&query=Crissy%20Field%2C%20San%20Francisco","a":["Crissy Field"]},{"n":"Fort Point","c":"sight","lat":37.8105,"lng":-122.477,"d":"다리 바로 아래. 웅장한 앵글","g":"https://www.google.com/maps/search/?api=1&query=Fort%20Point%2C%20San%20Francisco","a":["Fort Point"]},{"n":"Palace of Fine Arts","c":"sight","lat":37.8029,"lng":-122.4485,"d":"로마 신전풍 로툰다. 15~20분","g":"https://www.google.com/maps/search/?api=1&query=Palace%20of%20Fine%20Arts%2C%20San%20Francisco","a":["Palace of Fine Arts"]},{"n":"알카트라즈 섬","c":"sight","lat":37.827,"lng":-122.423,"d":"예약 필수. 야간 투어 추천","g":"https://www.google.com/maps/search/?api=1&query=Alcatraz%20Island","a":["알카트라즈"]},{"n":"Pier 33 (알카트라즈 승선)","c":"transit","lat":37.808,"lng":-122.405,"d":"알카트라즈 페리 출발지","g":"https://www.google.com/maps/search/?api=1&query=Pier%2033%2C%20San%20Francisco","a":["Pier 33 (알카트라즈 승선)"]},{"n":"Pier 39","c":"sight","lat":37.8087,"lng":-122.4098,"d":"바다사자 무리. 무료","g":"https://www.google.com/maps/search/?api=1&query=Pier%2039%2C%20San%20Francisco","a":["Pier 39 ·","Pier 39 바다사자"]},{"n":"Musée Mécanique","c":"tech","lat":37.809,"lng":-122.416,"d":"입장 무료. 100년 된 동전 아케이드","g":"https://www.google.com/maps/search/?api=1&query=Musee%20Mecanique%2C%20Pier%2045%2C%20San%20Francisco","a":["Musée Mécanique"]},{"n":"Ferry Building","c":"shop","lat":37.7955,"lng":-122.3937,"d":"Heath Ceramics. 토 8–14시 파머스마켓","g":"https://www.google.com/maps/search/?api=1&query=Ferry%20Building%20Marketplace%2C%20San%20Francisco","a":["Ferry Building"]},{"n":"롬바드 스트리트","c":"sight","lat":37.8021,"lng":-122.4187,"d":"여덟 번 꺾이는 꽃길 언덕","g":"https://www.google.com/maps/search/?api=1&query=Lombard%20Street%2C%20San%20Francisco","a":["롬바드 스트리트"]},{"n":"Painted Ladies (Alamo Sq)","c":"sight","lat":37.7763,"lng":-122.4328,"d":"노을 무렵이 제일 예쁨","g":"https://www.google.com/maps/search/?api=1&query=Alamo%20Square%2C%20San%20Francisco","a":["Painted Ladies (Alamo Sq)"]},{"n":"Twin Peaks","c":"sight","lat":37.7544,"lng":-122.4477,"d":"시내 전경. 차량털이 다발 구역","g":"https://www.google.com/maps/search/?api=1&query=Twin%20Peaks%2C%20San%20Francisco","a":["Twin Peaks"]},{"n":"Union Square","c":"shop","lat":37.788,"lng":-122.4075,"d":"몰은 폐업. 특정 매장만","g":"https://www.google.com/maps/search/?api=1&query=Union%20Square%2C%20San%20Francisco","a":["Union Square"]},{"n":"닌텐도 SF 플래그십","c":"shop","lat":37.7873,"lng":-122.4085,"d":"한정 굿즈·체험존","g":"https://www.google.com/maps/search/?api=1&query=Nintendo%20San%20Francisco%2C%20331%20Powell%20St","a":["닌텐도"]},{"n":"차이나타운 Dragon Gate","c":"sight","lat":37.7908,"lng":-122.4056,"d":"Grant Ave 따라 올라가세요","g":"https://www.google.com/maps/search/?api=1&query=Dragon%20Gate%2C%20Chinatown%2C%20San%20Francisco","a":["차이나타운"]},{"n":"Coit Tower","c":"sight","lat":37.8024,"lng":-122.4058,"d":"노스비치 언덕 위","g":"https://www.google.com/maps/search/?api=1&query=Coit%20Tower%2C%20San%20Francisco","a":["Coit Tower"]},{"n":"Cable Car Museum","c":"tech","lat":37.7947,"lng":-122.4116,"d":"무료. 실제 구동 기계실","g":"https://www.google.com/maps/search/?api=1&query=Cable%20Car%20Museum%2C%20San%20Francisco","a":["케이블카"]},{"n":"SFMOMA","c":"sight","lat":37.7857,"lng":-122.4011,"d":"수 휴관 · 9/14–16 특별휴관 · 목 야간개장","g":"https://www.google.com/maps/search/?api=1&query=SFMOMA%2C%20San%20Francisco","a":["SFMOMA"]},{"n":"de Young Museum","c":"sight","lat":37.7715,"lng":-122.4686,"d":"월 휴관. 전망타워 무료","g":"https://www.google.com/maps/search/?api=1&query=de%20Young%20Museum%2C%20San%20Francisco","a":["de Young Museum"]},{"n":"California Academy of Sciences","c":"sight","lat":37.7699,"lng":-122.4661,"d":"수족관+플라네타륨+열대우림돔","g":"https://www.google.com/maps/search/?api=1&query=California%20Academy%20of%20Sciences","a":["California Academy of Sciences"]},{"n":"Japanese Tea Garden","c":"nature","lat":37.7702,"lng":-122.4703,"d":"골든게이트파크 안. 9시 개장","g":"https://www.google.com/maps/search/?api=1&query=Japanese%20Tea%20Garden%2C%20Golden%20Gate%20Park","a":["Japanese Tea Garden"]},{"n":"Exploratorium","c":"tech","lat":37.8017,"lng":-122.3973,"d":"월·화 휴관","g":"https://www.google.com/maps/search/?api=1&query=Exploratorium%2C%20Pier%2015%2C%20San%20Francisco","a":["Exploratorium"]},{"n":"The Interval at Long Now","c":"tech","lat":37.8065,"lng":-122.431,"d":"1만 년 시계 재단의 바 겸 서재","g":"https://www.google.com/maps/search/?api=1&query=The%20Interval%20at%20Long%20Now%2C%20Fort%20Mason","a":["The Interval at Long Now"]},{"n":"Hayes Valley ★","c":"shop","lat":37.7765,"lng":-122.424,"d":"SF 부티크 쇼핑 1순위. 반나절 코스","g":"https://www.google.com/maps/search/?api=1&query=Hayes%20Valley%2C%20San%20Francisco","a":["Hayes Valley"]},{"n":"Japantown (Japan Center)","c":"shop","lat":37.785,"lng":-122.43,"d":"기노쿠니야 · 마이도 · 다이소","g":"https://www.google.com/maps/search/?api=1&query=Japan%20Center%2C%201581%20Webster%20St%2C%20San%20Francisco","a":["Japantown","재팬타운"]},{"n":"Rare Device","c":"shop","lat":37.7757,"lng":-122.438,"d":"큐레이션 좋은 디자인·기프트숍","g":"https://www.google.com/maps/search/?api=1&query=Rare%20Device%2C%20600%20Divisadero%20St%2C%20San%20Francisco","a":["Rare Device"]},{"n":"Valencia Street (Mission)","c":"shop","lat":37.76,"lng":-122.4215,"d":"Paxton Gate · Dandelion Chocolate","g":"https://www.google.com/maps/search/?api=1&query=Valencia%20Street%2C%20San%20Francisco","a":["Valencia Street"]},{"n":"Amoeba Music","c":"shop","lat":37.7692,"lng":-122.4503,"d":"세계 최대급 레코드숍","g":"https://www.google.com/maps/search/?api=1&query=Amoeba%20Music%2C%201855%20Haight%20St%2C%20San%20Francisco","a":["Amoeba Music"]},{"n":"Haight-Ashbury","c":"shop","lat":37.7699,"lng":-122.4469,"d":"빈티지 옷가게 거리","g":"https://www.google.com/maps/search/?api=1&query=Haight-Ashbury%2C%20San%20Francisco","a":["Haight-Ashbury"]},{"n":"Paper Source (Fillmore)","c":"shop","lat":37.788,"lng":-122.434,"d":"SF에서 여기 지점만 남았습니다","g":"https://www.google.com/maps/search/?api=1&query=Paper%20Source%2C%201925%20Fillmore%20St%2C%20San%20Francisco","a":["Paper Source (Fillmore)"]},{"n":"William Stout Books","c":"shop","lat":37.797,"lng":-122.4033,"d":"건축·디자인 전문 서점","g":"https://www.google.com/maps/search/?api=1&query=William%20Stout%20Architectural%20Books%2C%20San%20Francisco","a":["William Stout Books"]},{"n":"Ritual Coffee (Hayes Valley)","c":"cafe","lat":37.7762,"lng":-122.4243,"d":"공원 앞. 헤이즈밸리 쇼핑 중간에","g":"https://www.google.com/maps/search/?api=1&query=Ritual%20Coffee%20Roasters%2C%20Hayes%20Valley%2C%20San%20Francisco","a":["Ritual Coffee (Hayes Valley)"]},{"n":"Blue Bottle 원조 키오스크","c":"cafe","lat":37.7757,"lng":-122.4225,"d":"블루보틀이 시작된 창고 골목","g":"https://www.google.com/maps/search/?api=1&query=Blue%20Bottle%20Coffee%20Kiosk%2C%20Linden%20St%2C%20San%20Francisco","a":["Blue Bottle 원조 키오스크"]},{"n":"Sightglass Coffee","c":"cafe","lat":37.777,"lng":-122.409,"d":"창고형 로스터리. 공간이 볼거리","g":"https://www.google.com/maps/search/?api=1&query=Sightglass%20Coffee%2C%20270%207th%20St%2C%20San%20Francisco","a":["Sightglass Coffee"]},{"n":"Tartine Bakery","c":"cafe","lat":37.7614,"lng":-122.4241,"d":"SF 베이커리의 대명사. 줄 각오","g":"https://www.google.com/maps/search/?api=1&query=Tartine%20Bakery%2C%20600%20Guerrero%20St%2C%20San%20Francisco","a":["Tartine Bakery"]},{"n":"Four Barrel Coffee","c":"cafe","lat":37.767,"lng":-122.422,"d":"미션 쇼핑 코스 중간","g":"https://www.google.com/maps/search/?api=1&query=Four%20Barrel%20Coffee%2C%20375%20Valencia%20St%2C%20San%20Francisco","a":["Four Barrel Coffee"]},{"n":"Wrecking Ball Coffee","c":"cafe","lat":37.7975,"lng":-122.437,"d":"Union St 쇼핑 중간","g":"https://www.google.com/maps/search/?api=1&query=Wrecking%20Ball%20Coffee%20Roasters%2C%202271%20Union%20St%2C%20San%20Francisco","a":["Wrecking Ball Coffee"]},{"n":"Jane on Fillmore","c":"cafe","lat":37.788,"lng":-122.4338,"d":"베이커리 카페. 브런치","g":"https://www.google.com/maps/search/?api=1&query=Jane%20on%20Fillmore%2C%20San%20Francisco","a":["Jane on Fillmore"]},{"n":"Sutter-Stockton Garage","c":"transit","lat":37.7897,"lng":-122.407,"d":"유니언스퀘어. 12시간 $40, 24시간 운영","g":"https://www.google.com/maps/search/?api=1&query=Sutter-Stockton%20Garage%2C%20San%20Francisco","a":["Sutter-Stockton Garage"]},{"n":"Union Square Garage","c":"transit","lat":37.7885,"lng":-122.4075,"d":"평일 9:30 전 입차 시 얼리버드 $20","g":"https://www.google.com/maps/search/?api=1&query=Union%20Square%20Garage%2C%20333%20Post%20St%2C%20San%20Francisco","a":["Union Square Garage"]},{"n":"PIER 39 Garage","c":"transit","lat":37.8078,"lng":-122.411,"d":"피셔맨스워프·알카트라즈용. 24시간","g":"https://www.google.com/maps/search/?api=1&query=Pier%2039%20Garage%2C%20San%20Francisco","a":["Pier 39 Garage"]},{"n":"Performing Arts Garage","c":"transit","lat":37.778,"lng":-122.42,"d":"헤이즈밸리 주차는 여기","g":"https://www.google.com/maps/search/?api=1&query=Performing%20Arts%20Garage%2C%20360%20Grove%20St%2C%20San%20Francisco","a":["Performing Arts Garage"]},{"n":"Music Concourse Garage","c":"transit","lat":37.77,"lng":-122.467,"d":"골든게이트파크. 1일 최대 $35","g":"https://www.google.com/maps/search/?api=1&query=Music%20Concourse%20Garage%2C%20San%20Francisco","a":["Music Concourse Garage"]},{"n":"Caltrain SF (4th & King)","c":"transit","lat":37.7766,"lng":-122.3947,"d":"Caltrain 샌프란시스코 종점","g":"https://www.google.com/maps/search/?api=1&query=Caltrain%204th%20and%20King%20Station%2C%20San%20Francisco","a":["Caltrain SF (4th & King)"]},{"n":"Muir Woods","c":"nature","lat":37.8912,"lng":-122.5719,"d":"예약 필수. 레드우드 숲","g":"https://www.google.com/maps/search/?api=1&query=Muir%20Woods%20National%20Monument","a":["Muir Woods"]},{"n":"Sausalito","c":"nature","lat":37.859,"lng":-122.485,"d":"뮤어우즈 다녀오는 길 점심","g":"https://www.google.com/maps/search/?api=1&query=Sausalito%2C%20CA","a":["Sausalito"]},{"n":"Half Moon Bay","c":"nature","lat":37.4636,"lng":-122.4286,"d":"숙소 45분. 절벽 산책 + 랍스터롤","g":"https://www.google.com/maps/search/?api=1&query=Half%20Moon%20Bay%20State%20Beach%2C%20CA","a":["Half Moon Bay"]},{"n":"Pescadero","c":"nature","lat":37.255,"lng":-122.383,"d":"1번 국도 남쪽. 아티초크 수프","g":"https://www.google.com/maps/search/?api=1&query=Pescadero%2C%20CA","a":["Pescadero"]},{"n":"Pigeon Point 등대","c":"nature","lat":37.182,"lng":-122.394,"d":"1번 국도 드라이브 포토스팟","g":"https://www.google.com/maps/search/?api=1&query=Pigeon%20Point%20Lighthouse%2C%20CA","a":["Pigeon Point 등대"]},{"n":"Santa Cruz Beach Boardwalk","c":"sight","lat":36.964,"lng":-122.018,"d":"9월 평일엔 놀이기구 휴장 많음","g":"https://www.google.com/maps/search/?api=1&query=Santa%20Cruz%20Beach%20Boardwalk","a":["Santa Cruz Beach Boardwalk"]},{"n":"Monterey Bay Aquarium","c":"sight","lat":36.6182,"lng":-121.9018,"d":"성인 $65. LA 가는 길 경유","g":"https://www.google.com/maps/search/?api=1&query=Monterey%20Bay%20Aquarium","a":["Monterey Bay Aquarium","몬터레이"]},{"n":"The Lone Cypress (17-Mile)","c":"nature","lat":36.5686,"lng":-121.966,"d":"통행료 차량당 $12.50","g":"https://www.google.com/maps/search/?api=1&query=The%20Lone%20Cypress%2C%20Pebble%20Beach%2C%20CA","a":["17-Mile"]},{"n":"Carmel-by-the-Sea","c":"sight","lat":36.5552,"lng":-121.9233,"d":"동화 같은 예술가 마을","g":"https://www.google.com/maps/search/?api=1&query=Carmel-by-the-Sea%2C%20CA","a":["카멜"]},{"n":"Bixby Creek Bridge","c":"nature","lat":36.3714,"lng":-121.902,"d":"빅서 구간의 상징","g":"https://www.google.com/maps/search/?api=1&query=Bixby%20Creek%20Bridge%2C%20Big%20Sur%2C%20CA","a":["빅서"]},{"n":"SJC 산호세 공항","c":"transit","lat":37.3639,"lng":-121.9289,"d":"숙소에서 차 20분. LA행 최적","g":"https://www.google.com/maps/search/?api=1&query=San%20Jose%20Mineta%20International%20Airport","a":["SJC 산호세 공항"]},{"n":"SFO 샌프란시스코 공항","c":"transit","lat":37.6213,"lng":-122.379,"d":"숙소에서 차 30~40분","g":"https://www.google.com/maps/search/?api=1&query=San%20Francisco%20International%20Airport","a":["SFO 샌프란시스코 공항"]}]}</script>
+<script>
+(function(){
+  var D = JSON.parse(document.getElementById('placedata').textContent);
+  var COLOR = {}; D.cats.forEach(function(c){ COLOR[c.id]=c.color; });
+
+  // ── 일정·카드 제목 옆에 링크 자동 부착
+  var toks = [];
+  D.places.forEach(function(p,i){ (p.a||[p.n]).forEach(function(a){ toks.push({t:a,i:i}); }); });
+  toks.sort(function(a,b){ return b.t.length - a.t.length; });
+
+  function decorate(el){
+    if (el.querySelector('.mlink')) return;
+    var rest = el.textContent, hit = [];
+    for (var k=0;k<toks.length;k++){
+      if (hit.length>=2) break;
+      var pos = rest.indexOf(toks[k].t);
+      if (pos>=0 && hit.indexOf(toks[k].i)<0){
+        hit.push(toks[k].i);
+        rest = rest.slice(0,pos) + ' ' + rest.slice(pos + toks[k].t.length); // 겹치는 이름 재매칭 방지
+      }
+    }
+    hit.forEach(function(i){
+      var p = D.places[i];
+      var a = document.createElement('a');
+      a.className='mlink'; a.href=p.g; a.target='_blank'; a.rel='noopener';
+      a.textContent='구글맵'; a.title=p.n;
+      var b = document.createElement('a');
+      b.className='mlink jump'; b.href='#map'; b.dataset.idx=i; b.textContent='지도'; b.title=p.n;
+      el.appendChild(a); el.appendChild(b);
+    });
+  }
+  document.querySelectorAll('.tl li > div > b').forEach(decorate);
+  document.querySelectorAll('.card h4').forEach(function(h){ if(!h.querySelector('a')) decorate(h); });
+
+  // ── 지도
+  if (typeof L === 'undefined'){ document.getElementById('mapfail').style.display='block'; return; }
+  var map = L.map('mapbox',{scrollWheelZoom:false}).setView([37.55,-122.20],9);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{
+    attribution:'&copy; OpenStreetMap &copy; CARTO', subdomains:'abcd', maxZoom:19
+  }).addTo(map);
+
+  var markers = D.places.map(function(p,i){
+    var m = L.circleMarker([p.lat,p.lng],{
+      radius:7, color:'#fff', weight:2.5, fillColor:COLOR[p.c]||'#666', fillOpacity:1, className:'mkr'
+    });
+    m.bindTooltip(p.n,{direction:'top',offset:[0,-6]});
+    m.bindPopup('<b>'+p.n+'</b><br>'+p.d+
+      '<br><a href="'+p.g+'" target="_blank" rel="noopener" style="font-weight:700">구글맵에서 열기 →</a>');
+    m._cat = p.c; m._i = i;
+    m.addTo(map);
+    return m;
+  });
+
+  var active = {}; D.cats.forEach(function(c){ active[c.id]=true; });
+  function refresh(){
+    markers.forEach(function(m){
+      if (active[m._cat]) { if(!map.hasLayer(m)) m.addTo(map); }
+      else if (map.hasLayer(m)) map.removeLayer(m);
+    });
+  }
+  document.querySelectorAll('#catctl button').forEach(function(b){
+    b.addEventListener('click', function(){
+      var c=b.dataset.cat; active[c]=!active[c]; b.classList.toggle('on',active[c]); refresh();
+    });
+  });
+
+  var R = {
+    all:[[36.30,-122.62],[37.92,-121.70]],
+    mv:[[37.375,-122.125],[37.445,-122.030]],
+    pa:[[37.415,-122.195],[37.500,-122.130]],
+    sj:[[37.290,-122.060],[37.405,-121.870]],
+    sf:[[37.740,-122.525],[37.835,-122.375]],
+    out:[[36.340,-122.600],[37.900,-121.850]]
+  };
+  document.querySelectorAll('#regctl button').forEach(function(b){
+    b.addEventListener('click', function(){
+      document.querySelectorAll('#regctl button').forEach(function(x){x.classList.remove('on');});
+      b.classList.add('on');
+      map.fitBounds(R[b.dataset.region], {padding:[24,24]});
+    });
+  });
+  map.fitBounds(R.all,{padding:[24,24]});
+
+  // ── 일정의 '지도' 칩 → 해당 핀으로 이동 + 팝업
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('.mlink.jump');
+    if (!a) return;
+    e.preventDefault();
+    var m = markers[+a.dataset.idx];
+    if (!m) return;
+    if (!active[m._cat]) {
+      active[m._cat] = true;
+      var btn = document.querySelector('#catctl button[data-cat="'+m._cat+'"]');
+      if (btn) btn.classList.add('on');
+      refresh();
+    }
+    document.getElementById('map').scrollIntoView({behavior:'smooth'});
+    setTimeout(function(){ map.setView(m.getLatLng(), 14, {animate:true}); m.openPopup(); }, 450);
+  });
+})();
+</script>
+
+<script>
+(function(){
+  // 모바일에서만 홈화면 안내 노출
+  if (window.matchMedia('(max-width:700px)').matches){
+    var t=document.querySelector('.iostip'); if(t) t.style.display='block';
+  }
+  // 큰글씨 토글
+  var bt=document.getElementById('bigtext');
+  bt.addEventListener('click',function(){
+    var on=document.body.classList.toggle('big');
+    bt.classList.toggle('on',on);
+    bt.textContent = on ? '가' : '가';
+    bt.style.fontSize = on ? '19px' : '15px';
+  });
+  // 맨 위로
+  var tt=document.getElementById('totop');
+  tt.addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+  window.addEventListener('scroll',function(){
+    tt.classList.toggle('show', window.scrollY > 700);
+  },{passive:true});
+})();
+</script>
+</body>
+</html>
